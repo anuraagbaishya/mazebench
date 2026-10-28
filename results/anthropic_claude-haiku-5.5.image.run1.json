@@ -1,0 +1,4084 @@
+[
+ {
+  "id": "maze_001",
+  "optimal_length": 21,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 11943,
+   "total_tokens": 12767,
+   "cost": 0.0060539,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0060539,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0059715
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 11800,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 23 moves. I read the wall positions from the image by estimating coordinates, so this path is my best reading rather than a fully verified search.\n\nThe route goes from the green cell (column 8, bottom row) left along the bottom rows, up column 0 past the left edge, then up through column 2 and across to the red cell in column 1, row 1.\n\nANSWER: ULDLLLLULLDLUUURRUUULUU",
+  "reasoning": null,
+  "moves": "ULDLLLLULLDLUUURRUUULUU",
+  "status": "solved",
+  "note": "23 moves vs optimal 21",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 53.9,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_002",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4194,
+   "total_tokens": 5018,
+   "cost": 0.0021794,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021794,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002097
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4010,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image. The green start is at row 5, column 9 and the red goal is at row 7, column 1 (rows and columns counted from the top-left, starting at 0).\n\nThe route goes left along row 5 to column 7, down to row 6, left to column 5, down to row 7, then left along row 7 to the goal. The Manhattan distance is 8 horizontal plus 2 vertical moves, so 10 moves is the minimum possible, and this route achieves it with no walls crossed.\n\nANSWER: LLDLLDLLLL",
+  "reasoning": null,
+  "moves": "LLDLLDLLLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 18.4,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_003",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2683,
+   "total_tokens": 3507,
+   "cost": 0.0014239,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014239,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0013415
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2543,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 13 moves. I read the wall positions from the image by estimating grid coordinates, so the route is based on that reading.\n\nFrom the green cell (bottom row, column 7 counting from 1), go right three times, then up four times along the right side. Then go left one cell, up one, left one, up one, and finally right twice into the red cell, which is only reachable from its left side.\n\nANSWER: RRRUUUULULURR",
+  "reasoning": null,
+  "moves": "RRRUUUULULURR",
+  "status": "solved",
+  "note": "13 moves vs optimal 11",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.5,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_004",
+  "optimal_length": 5,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1895,
+   "total_tokens": 2719,
+   "cost": 0.0010299,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010299,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0009475
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1727,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 5 moves, going from the green cell (bottom row, column 9) to the red cell (bottom row, column 6).\n\nLeft to (9,8), up to (8,8), left to (8,7), down to (9,7), then left to the red cell (9,6). The direct left route along the bottom row is blocked by the wall between columns 7 and 8, so the path detours up one row. I read the wall positions from the image by estimate, so this is the best reading rather than a certainty.\n\nANSWER: LULDL",
+  "reasoning": null,
+  "moves": "LULDL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 10.2,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_005",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1641,
+   "total_tokens": 2465,
+   "cost": 0.0009029,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009029,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0008205
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1307,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nUsing the grid with rows and columns numbered from 0 at the top-left:\n\n- **Start:** row 4, column 0 (left edge).\n- **Goal:** row 9, column 9 (bottom-right corner).\n\n**Going down the left column:** From the start, the left edge has no horizontal walls across column 0 until the bottom. The wall segments near column 0 are either vertical (between columns 0 and 1) or begin at x = 96, so they don't block downward movement. That gives five moves down (D\u00d75) to reach row 9, column 0.\n\n**Going right along the bottom row:** The horizontal wall at the top of row 9 doesn't block horizontal movement. No vertical wall crosses row 9 between columns 0 and 9, so nine moves right (R\u00d79) reach the goal.\n\n**Shortest?** The Manhattan distance is 5 rows + 9 columns = 14, and this path uses exactly 14 moves, so it is optimal.\n\nANSWER: DDDDDRRRRRRRRR",
+  "reasoning": null,
+  "moves": "DDDDDRRRRRRRRR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.1,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_006",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3871,
+   "total_tokens": 4695,
+   "cost": 0.0020179,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020179,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0019355
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3740,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 18 moves. I read the walls from the image by estimating cell boundaries, so the route is based on that reading.\n\nRoute: start (row 2, col 0) \u2192 right, right \u2192 down \u2192 right, right \u2192 up, up \u2192 right \u2192 up \u2192 right \u2192 down \u2192 right \u2192 up \u2192 right \u2192 down \u2192 right \u2192 down, down to the red cell (row 3, col 9).\n\nANSWER: RRDRRUURUDRURDRDD",
+  "reasoning": null,
+  "moves": "RRDRRUURUDRURDRDD",
+  "status": "failed",
+  "note": "hit a wall at move 11; ignored 4 wall(s) (moves 11, 13, 15, 16), does not end at the goal",
+  "walls_ignored": 4,
+  "wall_moves": [
+   11,
+   13,
+   15,
+   16
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 19.0,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_007",
+  "optimal_length": 26,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 16179,
+   "total_tokens": 17003,
+   "cost": 0.0081719,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0081719,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0080895
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15973,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image (columns 0\u20139 left to right, rows 0\u20139 top to bottom). The start is at row 0, column 7 and the goal is at row 9, column 6. The goal is reachable only from the cell above it, and the route below was checked against each wall, but I did not run an exhaustive search, so optimality is not formally proven.\n\nThe route runs right and down the right side, crosses to the middle-left corridor on row 5, drops down the left edge, then runs along the bottom row to reach the goal from above.\n\nANSWER: RDDLDDDLDLULLLLLDRDDDRRRRURD",
+  "reasoning": null,
+  "moves": "RDDLDDDLDLULLLLLDRDDDRRRRURD",
+  "status": "solved",
+  "note": "28 moves vs optimal 26",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 69.8,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_008",
+  "optimal_length": 16,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4669,
+   "total_tokens": 5493,
+   "cost": 0.0024169,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024169,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0023345
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4531,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The path below is 18 moves. I traced it by reading the wall positions from the image, so an edge case could be misread.\n\nRoute: from the green cell, go left one cell, then up to the row-5 cell, right one, and up five cells in the rightmost column to the top row. Then go left six cells along the top row, down one, left two along the second row, and up into the red cell.\n\nANSWER: LURUUUUULLLLLLDLLU",
+  "reasoning": null,
+  "moves": "LURUUUUULLLLLLDLLU",
+  "status": "solved",
+  "note": "18 moves vs optimal 16",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 23.7,
+  "run_at": "2026-10-26T22:00:21"
+ },
+ {
+  "id": "maze_009",
+  "optimal_length": 16,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 7769,
+   "total_tokens": 8593,
+   "cost": 0.0039669,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0039669,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0038845
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7626,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image, using a 10x10 grid with the start at row 9, column 2 (bottom row) and the goal at row 4, column 7. I did not run a search, so the path is the one I found by hand rather than a verified shortest one.\n\nThe route goes right along the bottom row to column 6, up through the middle of the maze, then over to the goal from below-left.\n\nANSWER: RRRRULURRULLUURR",
+  "reasoning": null,
+  "moves": "RRRRULURRULLUURR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 36.2,
+  "run_at": "2026-10-26T22:00:30"
+ },
+ {
+  "id": "maze_010",
+  "optimal_length": 15,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 8827,
+   "total_tokens": 9651,
+   "cost": 0.0044959,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0044959,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0044135
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8696,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell and found a 19-move route. I did not run an exhaustive search, so 19 is the shortest route I found rather than a proven minimum.\n\nThe route goes down the right edge to the bottom-right corner, works back left and up through the middle, then crosses row 5 to the left column and drops into the red cell.\n\nANSWER: DDDDDLULLUUULLLLDLL",
+  "reasoning": null,
+  "moves": "DDDDDLULLUUULLLLDLL",
+  "status": "solved",
+  "note": "19 moves vs optimal 15",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 37.8,
+  "run_at": "2026-10-26T22:00:31"
+ },
+ {
+  "id": "maze_011",
+  "optimal_length": 16,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4697,
+   "total_tokens": 5521,
+   "cost": 0.0024309,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024309,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0023485
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4287,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze on the grid (rows and columns counted from the top-left, starting at 0). The green start is at row 9, column 4, and the red goal is at row 6, column 5.\n\nThe red cell is only reachable from the cell to its right (row 6, column 6) or from the left (row 6, column 4). The left side is blocked by walls along the row 6/row 7 boundary, so I used the right side.\n\nThe route I found goes up from the start, east along the bottom row to the right edge, up and around through row 7 and row 8, then up into the goal's row:\n\n1. U to (8,4)\n2. R to (8,5)\n3. R to (8,6)\n4. D to (9,6)\n5. R to (9,7)\n6. R to (9,8)\n7. R to (9,9)\n8. U to (8,9)\n9. U to (7,9)\n10. L to (7,8)\n11. D to (8,8)\n12. L to (8,7)\n13. U to (7,7)\n14. L to (7,6)\n15. U to (6,6)\n16. L to (6,5), the red goal\n\nI did not exhaustively search every alternative, so I can't fully prove this is the shortest, but it is a valid path that avoids all walls as I read them.\n\nANSWER: URRDRRRUULDLULUL",
+  "reasoning": null,
+  "moves": "URRDRRRUULDLULUL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 21.6,
+  "run_at": "2026-10-26T22:00:33"
+ },
+ {
+  "id": "maze_012",
+  "optimal_length": 41,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 15310,
+   "total_tokens": 16134,
+   "cost": 0.0077374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0077374,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.007655
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 15151,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze by reading the wall segments on the image and found a 37-move route. I did not run an exhaustive search, so I can't guarantee it is the absolute shortest, but I checked each move against the walls.\n\nThe route runs from the start on the left edge, through the upper-middle corridors to the right side, down the right column, and then through the bottom row to the red cell from below.\n\nANSWER: DRRRRULUURURDDRUURDRDRDDDLDDLDLDRRRUU",
+  "reasoning": null,
+  "moves": "DRRRRULUURURDDRUURDRDRDDDLDDLDLDRRRUU",
+  "status": "failed",
+  "note": "hit a wall at move 7; ignored 1 wall(s) (moves 7), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   7
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 68.7,
+  "run_at": "2026-10-26T22:00:39"
+ },
+ {
+  "id": "maze_013",
+  "optimal_length": 17,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5318,
+   "total_tokens": 6142,
+   "cost": 0.0027414,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027414,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002659
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5200,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found takes 17 moves: down one cell, left one, up five through the right-hand column, left six along row 3, then up and right to the red cell.\n\nI read the walls from the image by estimating cell boundaries on the 56-pixel grid, so a wall I misjudged could change the route.\n\nANSWER: DLUUUUULLLLLLUURU",
+  "reasoning": null,
+  "moves": "DLUUUUULLLLLLUURU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 24.6,
+  "run_at": "2026-10-26T22:00:40"
+ },
+ {
+  "id": "maze_014",
+  "optimal_length": 4,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1695,
+   "total_tokens": 2519,
+   "cost": 0.0009299,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009299,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0008475
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1623,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 4 moves: down two cells from the green start, then left two cells to the red goal along the bottom row. I read the wall positions from the image, so the route depends on those readings.\n\nANSWER: DDLL",
+  "reasoning": null,
+  "moves": "DDLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.9,
+  "run_at": "2026-10-26T22:00:45"
+ },
+ {
+  "id": "maze_015",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6044,
+   "total_tokens": 6868,
+   "cost": 0.0031044,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031044,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003022
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5819,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path is 7 moves, going right one cell, down one, left two, down one, right one, and down one. The wall under the green cell blocks a direct drop, so the route detours through the cell to its right.\n\n1. R: green (row 0, col 7) to row 0, col 8.\n2. D: down to row 1, col 8.\n3. L: left to row 1, col 7.\n4. L: left to row 1, col 6.\n5. D: down to row 2, col 6.\n6. R: right to row 2, col 7.\n7. D: down to the red cell (row 3, col 7).\n\nI read the wall positions from the image by estimate, so this path is based on that reading.\n\nANSWER: RDLLDRD",
+  "reasoning": null,
+  "moves": "RDLLDRD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 30.8,
+  "run_at": "2026-10-26T22:00:55"
+ },
+ {
+  "id": "maze_016",
+  "optimal_length": 18,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 12322,
+   "total_tokens": 13146,
+   "cost": 0.0062434,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0062434,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.006161
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 12173,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 18 moves, though I read the wall positions from the image by eye, so treat it as a best reading rather than a certainty.\n\nRoute: up out of the start and through the top-left opening, down to row 2, along row 2 to column 5, then down into row 3 and east along rows 3 and 4 to column 8, down to row 5, east to column 9, and up into the red cell.\n\nANSWER: URURDDRRRDRRDRDRUU",
+  "reasoning": null,
+  "moves": "URURDDRRRDRRDRDRUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 57.9,
+  "run_at": "2026-10-26T22:00:55"
+ },
+ {
+  "id": "maze_017",
+  "optimal_length": 20,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 10118,
+   "total_tokens": 10942,
+   "cost": 0.0051414,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0051414,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.005059
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 9939,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell and found a 38-move route. I did not run an exhaustive search, so I can't guarantee it is the absolute shortest, but every move was checked against the image.\n\nANSWER: URRURRUR DRDDRUUR... \n\nWritten out without spaces, the full path is:\n\nANSWER: URRURRURDDDRUURUURLLDLUURULL\n\nNote: that string has a typo in the last segment; the correct sequence is below.\n\nANSWER: URRURRUDRDDRUURUULLDLUUL",
+  "reasoning": null,
+  "moves": "URRURRUDRDDRUURUULLDLUUL",
+  "status": "failed",
+  "note": "hit a wall at move 9; ignored 7 wall(s) (moves 9, 11, 12, 15, 17, 20, 22), does not end at the goal",
+  "walls_ignored": 7,
+  "wall_moves": [
+   9,
+   11,
+   12,
+   15,
+   17,
+   20,
+   22
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 46.0,
+  "run_at": "2026-10-26T22:01:04"
+ },
+ {
+  "id": "maze_018",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3955,
+   "total_tokens": 4779,
+   "cost": 0.0020599,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020599,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0019775
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3712,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 14 moves. I read the walls from the image, so a misread wall could change the route.\n\nThe green start is at row 9, column 1 (counting from 0 at the top-left), and the red goal is at row 6, column 4.\n\n1. Go up column 1 from row 9 to row 3 (6 moves U).\n2. Go right along row 3 to column 4 (3 moves R).\n3. Go down to row 4, column 4 (D).\n4. Go left to column 3 (L), since the wall under row 3 blocks going straight down from column 3.\n5. Go down to row 5, column 3 (D), then right to column 4 (R).\n6. Go down into the red cell (D).\n\nANSWER: UUUUUURRRDLDRD",
+  "reasoning": null,
+  "moves": "UUUUUURRRDLDRD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 21.2,
+  "run_at": "2026-10-26T22:01:06"
+ },
+ {
+  "id": "maze_019",
+  "optimal_length": 30,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5449,
+   "total_tokens": 6273,
+   "cost": 0.0028069,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028069,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0027245
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5333,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls on the grid and found a 16-move route. I checked the openings by reading the image, so a misread wall could change the path.\n\nThe route goes left along the top-right corridor, down through the middle column, around through the lower-left-middle area, then up column 3 to reach the red cell from below.\n\nANSWER: LDLDLLDDDLLUUURU",
+  "reasoning": null,
+  "moves": "LDLDLLDDDLLUUURU",
+  "status": "failed",
+  "note": "hit a wall at move 9; ignored 2 wall(s) (moves 9, 13), ends at the goal",
+  "walls_ignored": 2,
+  "wall_moves": [
+   9,
+   13
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 26.4,
+  "run_at": "2026-10-26T22:01:09"
+ },
+ {
+  "id": "maze_020",
+  "optimal_length": 18,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6142,
+   "total_tokens": 6966,
+   "cost": 0.0031534,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031534,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003071
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6017,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 18 moves. I read the wall layout from the image, so a few borderline wall positions could be misjudged.\n\nThe route runs down the left column, then winds through the lower-left to the bottom row. From there it goes right to the column just left of the goal, up one cell, and right and down into the red cell.\n\nANSWER: DDDDRDRDRDDRRRRURD",
+  "reasoning": null,
+  "moves": "DDDDRDRDRDDRRRRURD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 30.0,
+  "run_at": "2026-10-26T22:01:15"
+ },
+ {
+  "id": "maze_021",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3883,
+   "total_tokens": 4707,
+   "cost": 0.0020239,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020239,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0019415
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3658,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze from the green start (bottom-left) to the red goal (row 8 from the top, column 7 from the left). I read the wall positions from the image by estimate, so the route is my best reading rather than a fully verified one.\n\nThe start cell's right side is walled, and the column-0 corridor above it is a dead end. The route leaves through the cell above the start, goes right, drops back down, and then works up and across through row 7 and row 6 to reach the goal from its left side (the goal's top, right, and bottom sides are walled).\n\nRoute: U, R, D, R, U, U, L, U, R, R, R, D, R, R (14 moves).\n\nANSWER: URDRUULURRRDRR",
+  "reasoning": null,
+  "moves": "URDRUULURRRDRR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 20.4,
+  "run_at": "2026-10-26T22:01:25"
+ },
+ {
+  "id": "maze_022",
+  "optimal_length": 41,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 12559,
+   "total_tokens": 13383,
+   "cost": 0.0063619,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0063619,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0062795
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 12407,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image. The path below is valid, but I did not exhaustively prove it is the shortest, so treat it as a best-found route.\n\nThe route goes right along the top row, down the middle, then loops over the top-right and down the right side before cutting back left along the bottom to the red cell. It is 41 moves.\n\nANSWER: RRRDDDRRURUURRRDLLDRRDDLDDDRDLLLDLUULDLLD",
+  "reasoning": null,
+  "moves": "RRRDDDRRURUURRRDLLDRRDDLDDDRDLLLDLUULDLLD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 53.7,
+  "run_at": "2026-10-26T22:01:27"
+ },
+ {
+  "id": "maze_023",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2407,
+   "total_tokens": 3231,
+   "cost": 0.0012859,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012859,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0012035
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2276,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found takes 11 moves. It runs along the bottom rows: down one, left five to column 4, up one, left one, down one, then left two to the red cell. Manhattan distance is 9, but the walls at column 6 and between columns 3 and 4 force this detour. I read the wall positions from the image, so a misread wall could change the route.\n\nANSWER: DLLLLLULDLL",
+  "reasoning": null,
+  "moves": "DLLLLLULDLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.7,
+  "run_at": "2026-10-26T22:01:31"
+ },
+ {
+  "id": "maze_024",
+  "optimal_length": 4,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1396,
+   "total_tokens": 2220,
+   "cost": 0.0007804,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007804,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000698
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1193,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The green cell is at row 7, column 9 (counting from the top-left, starting at 0), and the red cell is at row 3, column 9, directly above it in the same column.\n\nWalking up that column, I checked each horizontal boundary for a wall covering column 9: the boundaries at the top of rows 7, 6, 5, and 4 are clear. The short wall segments near the red cell, and the one at the top of the green cell's neighbour, lie in column 8 or the vertical wall at the right side of column 8, so they don't block vertical movement in column 9. That makes the shortest path four moves up.\n\nANSWER: UUUU",
+  "reasoning": null,
+  "moves": "UUUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 7.9,
+  "run_at": "2026-10-26T22:01:35"
+ },
+ {
+  "id": "maze_025",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6136,
+   "total_tokens": 6960,
+   "cost": 0.0031504,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031504,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003068
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5984,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 19 moves. I read the walls from the image by estimating pixel positions on the 56-pixel grid, so a few wall segments near the route are estimates.\n\nThe route runs from the green cell (row 8, column 9) up and then west along row 6, climbs to row 5, crosses to column 1, drops down the left side, and then returns east to the red cell (row 9, column 3).\n\nANSWER: ULULLLLLULLDDDRURDD",
+  "reasoning": null,
+  "moves": "ULULLLLLULLDDDRURDD",
+  "status": "failed",
+  "note": "hit a wall at move 19; ignored 1 wall(s) (moves 19), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   19
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 30.1,
+  "run_at": "2026-10-26T22:01:43"
+ },
+ {
+  "id": "maze_026",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3516,
+   "total_tokens": 4340,
+   "cost": 0.0018404,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018404,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001758
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3392,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze on the 10x10 grid, with the start at column 8, row 9 (bottom) and the goal at column 8, row 2. The route goes right and up the right-hand column, then left into the goal. I read the wall positions from the image by eye, so the route is a best reading rather than a fully verified search. It is 11 moves.\n\nANSWER: RUULURUUULU",
+  "reasoning": null,
+  "moves": "RUULURUUULU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 18.5,
+  "run_at": "2026-10-26T22:01:43"
+ },
+ {
+  "id": "maze_027",
+  "optimal_length": 9,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2774,
+   "total_tokens": 3598,
+   "cost": 0.0014694,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0014694,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001387
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2395,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nI located the green start at row 9, column 4 (counting rows and columns from 0 at the top-left) and the red goal at row 8, column 8. Reading the walls from the image:\n\n1. **R** to row 9, column 5. The wall at x\u2248320 does not block this step.\n2. **U** to row 8, column 5. The gap in the wall at y\u2248544 above column 5 allows this.\n3. **R** to row 8, column 6, then **R** to row 8, column 7. The vertical wall at x\u2248376 does not extend into row 8 here.\n4. **D** to row 9, column 7. No wall blocks this step.\n5. **R** to row 9, column 8, then **R** to row 9, column 9.\n6. **U** to row 8, column 9. The red cell's bottom wall stops at column 8, so column 9 is open.\n7. **L** to row 8, column 8, the red goal.\n\nThe red cell is walled on its top, bottom and left, so the only entry is from the right, which is why the route loops around through column 9. I did not prove this is the shortest possible path, but I found no shorter route through the walls I could read.\n\nANSWER: RURRDRRUL",
+  "reasoning": null,
+  "moves": "RURRDRRUL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 14.7,
+  "run_at": "2026-10-26T22:01:45"
+ },
+ {
+  "id": "maze_028",
+  "optimal_length": 16,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6160,
+   "total_tokens": 6984,
+   "cost": 0.0031624,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031624,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.00308
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5724,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Solution\n\nI mapped the maze on the 10x10 grid, with rows and columns numbered from 0 at the top-left. The green start is at row 9, column 5, and the red goal is at row 3, column 1.\n\nThe shortest route I found goes up the centre-right, loops through the middle, and then comes back left along row 4 to the goal:\n\n1. U: (9,5) \u2192 (8,5)\n2. U: (8,5) \u2192 (7,5)\n3. U: (7,5) \u2192 (6,5)\n4. R: (6,5) \u2192 (6,6)\n5. U: (6,6) \u2192 (5,6)\n6. U: (5,6) \u2192 (4,6)\n7. L: (4,6) \u2192 (4,5)\n8. D: (4,5) \u2192 (5,5)\n9. L: (5,5) \u2192 (5,4)\n10. U: (5,4) \u2192 (4,4)\n11. L: (4,4) \u2192 (4,3)\n12. L: (4,3) \u2192 (4,2)\n13. L: (4,2) \u2192 (4,1)\n14. U: (4,1) \u2192 (3,1), the goal\n\nThe direct route north from (5,5) into row 4 is blocked by a wall, which is why the path detours through (4,6) and (4,5). I did not exhaustively check every alternative, but the route above is the shortest one I could find, at 14 moves.\n\nANSWER: UUURUULDLULLLU",
+  "reasoning": null,
+  "moves": "UUURUULDLULLLU",
+  "status": "failed",
+  "note": "hit a wall at move 5; ignored 1 wall(s) (moves 5), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   5
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 28.2,
+  "run_at": "2026-10-26T22:01:46"
+ },
+ {
+  "id": "maze_029",
+  "optimal_length": 21,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4967,
+   "total_tokens": 5791,
+   "cost": 0.0025659,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0025659,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0024835
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4824,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I read the maze from the image and traced a route, checking each wall I could make out. The path is 15 moves and I believe it is the shortest, though a few wall segments near the middle were hard to read exactly.\n\nThe route goes right along the top row, down and back left through the upper-middle area, around the wall at the bottom of row 2 via column 3, then down column 5 and right into the goal.\n\nANSWER: RRDLDLLDRRDDDRD",
+  "reasoning": null,
+  "moves": "RRDLDLLDRRDDDRD",
+  "status": "failed",
+  "note": "hit a wall at move 14; ignored 1 wall(s) (moves 14), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   14
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 24.1,
+  "run_at": "2026-10-26T22:01:48"
+ },
+ {
+  "id": "maze_030",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5220,
+   "total_tokens": 6044,
+   "cost": 0.0026924,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0026924,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.00261
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4999,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 14 moves. I read the grid as 10x10 with 56-pixel cells, putting the green start at row 4, column 9 and the red goal at row 3, column 4 (0-indexed from the top-left).\n\nThe route goes down out of the start, west along row 5, up through column 7 to row 3, back down through column 6 to row 5, then west to column 3 and up into the goal. Each move was checked against the wall segments.\n\nThe Manhattan distance is 6, but the direct paths are blocked by walls, so I went with the 14-move route. I did not exhaustively rule out every shorter alternative.\n\nANSWER: DLLUULDDLLLUUR",
+  "reasoning": null,
+  "moves": "DLLUULDDLLLUUR",
+  "status": "solved",
+  "note": "14 moves vs optimal 10",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 23.8,
+  "run_at": "2026-10-26T22:01:50"
+ },
+ {
+  "id": "maze_031",
+  "optimal_length": 9,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2411,
+   "total_tokens": 3235,
+   "cost": 0.0012879,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012879,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0012055
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2254,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the route by reading wall positions from the image, so it could be off if I misread a wall segment.\n\nFrom the green start (row 1, column 0), the path goes down to row 2, right to column 1, down to row 4, left to column 0, down past the goal's row to row 6, right to column 1, then up into the red cell. The direct route down column 1 is blocked by a wall on the red cell's top edge, which is why the path detours around through column 0.\n\nANSWER: DRDDLDDRU",
+  "reasoning": null,
+  "moves": "DRDDLDDRU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.1,
+  "run_at": "2026-10-26T22:01:53"
+ },
+ {
+  "id": "maze_032",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2318,
+   "total_tokens": 3142,
+   "cost": 0.0012414,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012414,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001159
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2062,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 11 moves. I read the wall positions from the image by estimating grid coordinates, so the route depends on that reading.\n\nTaking columns 0\u20139 left to right and rows 0\u20139 top to bottom, the green start is at (col 8, row 9) and the red goal is at (col 9, row 5). The red cell is walled on its left and bottom, so it must be entered from above, from (col 9, row 4).\n\nThe route is:\n1. R to (9,9), then U three times to (9,6).\n2. L twice to (7,6), then U to (7,5).\n3. R to (8,5), then U to (8,4), then R to (9,4).\n4. D into the red cell at (9,5).\n\nANSWER: RUUULLURUR D\n\nANSWER: RUUULLURURD",
+  "reasoning": null,
+  "moves": "RUUULLURURD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.8,
+  "run_at": "2026-10-26T22:02:00"
+ },
+ {
+  "id": "maze_033",
+  "optimal_length": 13,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4291,
+   "total_tokens": 5115,
+   "cost": 0.0022279,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022279,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0021455
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3983,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 13 moves. I read the wall positions from the image, so coordinates are approximate.\n\nThe green start is at row 8, column 9 (counting from the top-left as row 0, column 0). The red goal is at row 3, column 5.\n\nThe route goes up out of the start, back left and up through the middle-right section, then up to row 3 and left along row 3 to the goal:\n\n1. U to (7,9)\n2. L to (7,8)\n3. L to (7,7)\n4. U to (6,7)\n5. R to (6,8)\n6. U to (5,8)\n7. U to (4,8)\n8. R to (4,9)\n9. U to (3,9)\n10. L to (3,8)\n11. L to (3,7)\n12. L to (3,6)\n13. L to (3,5)\n\nI did not exhaustively search for a shorter route, so this is the shortest path I found rather than a proven minimum.\n\nANSWER: ULLURUURULLLL",
+  "reasoning": null,
+  "moves": "ULLURUURULLLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 20.7,
+  "run_at": "2026-10-26T22:02:02"
+ },
+ {
+  "id": "maze_034",
+  "optimal_length": 5,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1811,
+   "total_tokens": 2635,
+   "cost": 0.0009879,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009879,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0009055
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1663,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 5 moves: down twice, then left three times.\n\nFrom the green cell at row 6, column 9, move down to row 8, column 9. Then move left along row 8 through columns 8 and 7 to reach the red cell at column 6. Since the Manhattan distance is 5 (2 rows and 3 columns), no shorter path exists. I read the wall positions from the image, and the edges along this route appear open.\n\nANSWER: DDLLL",
+  "reasoning": null,
+  "moves": "DDLLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 10.2,
+  "run_at": "2026-10-26T22:02:05"
+ },
+ {
+  "id": "maze_035",
+  "optimal_length": 9,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3631,
+   "total_tokens": 4455,
+   "cost": 0.0018979,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018979,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0018155
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3477,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze from the image and found a 9-move route. I read the wall positions from the picture, so a few edges near the goal are judgement calls.\n\nThe start is at row 9, column 6 (counting rows and columns from 0 at the top-left), and the goal is at row 5, column 7. The route goes up the column above the start, steps right and down around the wall segment under the goal, then comes back up through column 8 and steps left into the goal.\n\nANSWER: UUURDRUUL",
+  "reasoning": null,
+  "moves": "UUURDRUUL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 17.6,
+  "run_at": "2026-10-26T22:02:12"
+ },
+ {
+  "id": "maze_036",
+  "optimal_length": 47,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 17508,
+   "total_tokens": 18332,
+   "cost": 0.0088364,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0088364,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.008754
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 17268,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell, so the route below is my best reading of the image. The path is 19 moves.\n\nStarting from the green cell (row 2, column 9), the route goes up over the top of the maze, down through the middle, and then back up into the red cell's column:\n\n1. U, U: up to the top row.\n2. L, L, L: left along the top row to column 6.\n3. D, D: down to row 2, column 6.\n4. R, D: right to column 7, then down to row 3.\n5. L, L: left to column 5.\n6. D, D, D: down to row 6.\n7. L: left to column 4.\n8. U, U, U, U: up column 4 to the red cell.\n\nANSWER: UULLLDDRDLLDDDLUUUU",
+  "reasoning": null,
+  "moves": "UULLLDDRDLLDDDLUUUU",
+  "status": "failed",
+  "note": "hit a wall at move 16; ignored 1 wall(s) (moves 16), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   16
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 80.1,
+  "run_at": "2026-10-26T22:02:12"
+ },
+ {
+  "id": "maze_037",
+  "optimal_length": 4,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1059,
+   "total_tokens": 1883,
+   "cost": 0.0006119,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006119,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0005295
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 938,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is two moves straight up from the green cell. The green cell is in column 8, row 9 (counting from the top-left, both starting at 0), and the red cell is in column 8, row 7. The cells between them appear open, with no wall on either horizontal boundary in that column. Since the goal is only two rows away, no shorter path is possible.\n\nANSWER: UU",
+  "reasoning": null,
+  "moves": "UU",
+  "status": "failed",
+  "note": "hit a wall at move 1; ignored 1 wall(s) (moves 1), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   1
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.1,
+  "run_at": "2026-10-26T22:02:13"
+ },
+ {
+  "id": "maze_038",
+  "optimal_length": 6,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1372,
+   "total_tokens": 2196,
+   "cost": 0.0007684,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007684,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000686
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1257,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 6 moves, which equals the Manhattan distance from the start (row 5, column 0) to the goal (row 7, column 4). I read the walls from the image and did not check every segment exhaustively.\n\nPath: right three times along row 5, down into row 6, right one cell, then down into the red cell.\n\nANSWER: RRRDRD",
+  "reasoning": null,
+  "moves": "RRRDRD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 7.8,
+  "run_at": "2026-10-26T22:02:14"
+ },
+ {
+  "id": "maze_039",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6726,
+   "total_tokens": 7550,
+   "cost": 0.0034454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0034454,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003363
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6341,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Solution\n\nI read the wall layout from the image, using columns 0\u20139 left to right and rows 0\u20139 top to bottom. The start is at (row 4, col 0) and the goal is at (row 1, col 6).\n\nThe direct routes are blocked: the start cell has a wall below it, and the walls around the goal block entry from above and from the left. The route I found goes up the left edge, across the top row, down through a passage at column 2, and then through the middle to the goal:\n\n1. Up from the start along column 0 to row 0 (4 moves: U, U, U, U).\n2. Right along row 0 to column 2 (R, R).\n3. Down to row 1, left to column 1, then down to row 3 (D, L, D, D).\n4. Right to column 3, then down to row 4 (R, R, D).\n5. Right to column 4, up to row 3, right to column 5 (R, U, R).\n6. Up through column 5 to row 1, then right into the goal (U, U, R).\n\nI checked each move against the walls. I did not exhaustively prove this is the shortest path, but I found no shorter route among the alternatives I examined.\n\nANSWER: UUUURRDLDDRRDRURUUR",
+  "reasoning": null,
+  "moves": "UUUURRDLDDRRDRURUUR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 30.7,
+  "run_at": "2026-10-26T22:02:14"
+ },
+ {
+  "id": "maze_040",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1615,
+   "total_tokens": 2439,
+   "cost": 0.0008899,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008899,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0008075
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1440,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I read the maze as a 10x10 grid and traced a short route from the green cell (column 0, row 7) to the red cell (column 1, row 5). The wall at the top of the red cell's row is absent, and the wall segment at y=432 starts at x=96, so the green cell's upward path is open.\n\nMoves: green \u2192 up to (0,6) \u2192 up to (0,5) \u2192 right into the red cell at (1,5). This assumes there is no wall on the red cell's left side, which I could not confirm with certainty from the image.\n\nANSWER: UUR",
+  "reasoning": null,
+  "moves": "UUR",
+  "status": "failed",
+  "note": "hit a wall at move 3; ignored 1 wall(s) (moves 3), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   3
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.4,
+  "run_at": "2026-10-26T22:02:15"
+ },
+ {
+  "id": "maze_041",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1532,
+   "total_tokens": 2356,
+   "cost": 0.0008484,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008484,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000766
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1453,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 7 moves: right, down, left, down, down, right, down. It starts at the green cell (row 3, column 0), goes around the wall under it, and drops into the red cell from above.\n\nANSWER: RDLDDRD",
+  "reasoning": null,
+  "moves": "RDLDDRD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 8.7,
+  "run_at": "2026-10-26T22:02:19"
+ },
+ {
+  "id": "maze_042",
+  "optimal_length": 9,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1596,
+   "total_tokens": 2420,
+   "cost": 0.0008804,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008804,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000798
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1490,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 9 moves. Start at the top-left corner and go right along the top row to the fifth cell, since a thick wall blocks the top row between columns 5 and 6. Drop down one cell, go right one cell, go up into the top row, then go right to the red cell.\n\nANSWER: RRRRRDRUR",
+  "reasoning": null,
+  "moves": "RRRRRDRUR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 8.9,
+  "run_at": "2026-10-26T22:02:21"
+ },
+ {
+  "id": "maze_043",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3466,
+   "total_tokens": 4290,
+   "cost": 0.0018154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018154,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001733
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3364,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 22 moves. From the start, go down the column to row 3, then right to column 7, down to row 6, left along row 6 to the left edge, down the left column to the bottom row, then right to the red cell.\n\nANSWER: DDDRRRDDDLLLLLLLDDDRRR",
+  "reasoning": null,
+  "moves": "DDDRRRDDDLLLLLLLDDDRRR",
+  "status": "solved",
+  "note": "22 moves vs optimal 14",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 16.8,
+  "run_at": "2026-10-26T22:02:22"
+ },
+ {
+  "id": "maze_044",
+  "optimal_length": 24,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 7076,
+   "total_tokens": 7900,
+   "cost": 0.0036204,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0036204,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003538
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6736,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image, so the route below is my best reading of the maze rather than a verified search. The start is at row 6, column 9 (counting from the top-left as row 0, column 0), and the goal is at row 1, column 0.\n\nThe route leaves the start going left, winds up through the right-hand side of the maze, crosses over into row 1, then runs left along the top to the goal:\n\n1. L to (6,8), L to (6,7)\n2. U to (5,7), R to (5,8), R to (5,9)\n3. U to (4,9), L to (4,8), L to (4,7)\n4. U to (3,7), R to (3,8), U to (2,8), R to (2,9), U to (1,9)\n5. L to (1,8), (1,7), (1,6), (1,5)\n6. U to (0,5), L to (0,4), (0,3), (0,2), (0,1), (0,0)\n7. D to (1,0), the goal\n\nThis is 24 moves.\n\nANSWER: LLURRULLURURLLLLULLLLLD",
+  "reasoning": null,
+  "moves": "LLURRULLURURLLLLULLLLLD",
+  "status": "failed",
+  "note": "hit a wall at move 16; ignored 6 wall(s) (moves 16, 17, 18, 21, 22, 23), does not end at the goal",
+  "walls_ignored": 6,
+  "wall_moves": [
+   16,
+   17,
+   18,
+   21,
+   22,
+   23
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 33.8,
+  "run_at": "2026-10-26T22:02:23"
+ },
+ {
+  "id": "maze_045",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4557,
+   "total_tokens": 5381,
+   "cost": 0.0023609,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0023609,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0022785
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4373,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 25 moves. I read the walls from the image using a grid with rows 0\u20139 from the top and columns 0\u20139 from the left. The green start is at row 0, column 8, and the red goal is at row 6, column 1. I traced a route that avoids every wall, but I did not exhaustively prove that no shorter route exists.\n\nThe route goes right to the top-right corner, down the right column to row 6, then around through the lower-middle area and up to the goal from below.\n\nANSWER: RDDDDDDLLDRRDLLLULLUULLLD",
+  "reasoning": null,
+  "moves": "RDDDDDDLLDRRDLLLULLUULLLD",
+  "status": "solved",
+  "note": "25 moves vs optimal 19",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 22.1,
+  "run_at": "2026-10-26T22:02:25"
+ },
+ {
+  "id": "maze_046",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6532,
+   "total_tokens": 7356,
+   "cost": 0.0033484,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0033484,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003266
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6322,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image. The shortest route I found is 23 moves.\n\nStarting at the green cell (row 0, column 8), the only useful exit is to slide left along the top row to column 1, then down into row 1 and right to column 2. From there the path goes down column 2 to row 6, left to column 0, down to row 7, then right and down through column 1 to row 9, right to column 2, and finally up and right into the red cell (row 8, column 3).\n\nI checked the walls along this route but did not exhaustively prove that no shorter route exists.\n\nANSWER: LLLLLLLDRDDDDDLLDRDDRUR",
+  "reasoning": null,
+  "moves": "LLLLLLLDRDDDDDLLDRDDRUR",
+  "status": "failed",
+  "note": "hit a wall at move 15; ignored 1 wall(s) (moves 15), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   15
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 31.3,
+  "run_at": "2026-10-26T22:02:28"
+ },
+ {
+  "id": "maze_047",
+  "optimal_length": 8,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1919,
+   "total_tokens": 2743,
+   "cost": 0.0010419,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0010419,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0009595
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1666,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 8 moves. The green start is at row 0, column 6, and the red goal is at row 2, column 6.\n\nFrom the start, the wall under row 1 blocks every direct downward route from the middle columns. The path goes right along the top row, drops down on the right side, then comes back left along row 2 to the goal:\n\n1. R: (0,6) \u2192 (0,7)\n2. R: (0,7) \u2192 (0,8)\n3. D: (0,8) \u2192 (1,8)\n4. R: (1,8) \u2192 (1,9)\n5. D: (1,9) \u2192 (2,9)\n6. L: (2,9) \u2192 (2,8)\n7. L: (2,8) \u2192 (2,7)\n8. L: (2,7) \u2192 (2,6), the red goal\n\nANSWER: RRDRDLLL",
+  "reasoning": null,
+  "moves": "RRDRDLLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.9,
+  "run_at": "2026-10-26T22:02:30"
+ },
+ {
+  "id": "maze_048",
+  "optimal_length": 15,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4693,
+   "total_tokens": 5517,
+   "cost": 0.0024289,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024289,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0023465
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4559,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The path below is 15 moves. I read the wall positions from the image by pixel coordinates and traced the route by hand, so I haven't verified that it is the absolute shortest.\n\nRoute: up from the green cell through the cell above it and into column 7, then up column 7 to row 3, back left into column 6, up to the top row, and left along the top row to the red cell.\n\nANSWER: UURUUUULUUULLLL",
+  "reasoning": null,
+  "moves": "UURUUUULUUULLLL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 22.3,
+  "run_at": "2026-10-26T22:02:30"
+ },
+ {
+  "id": "maze_049",
+  "optimal_length": 26,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 11747,
+   "total_tokens": 12571,
+   "cost": 0.0059559,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0059559,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0058735
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 11599,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image, using 26 moves. I couldn't verify every wall position with certainty, so this path is the best reading of the image rather than a guaranteed shortest route.\n\nThe route leaves the start going up the left edge, crosses through the middle-left, then runs along the middle rows to the right edge and up the right column to the top row, finishing left into the red cell.\n\nANSWER: URULUURURDRRURDRURRUUULL",
+  "reasoning": null,
+  "moves": "URULUURURDRRURDRURRUUULL",
+  "status": "failed",
+  "note": "hit a wall at move 10; ignored 8 wall(s) (moves 10, 13, 15, 17, 19, 20, 21, 22), does not end at the goal",
+  "walls_ignored": 8,
+  "wall_moves": [
+   10,
+   13,
+   15,
+   17,
+   19,
+   20,
+   21,
+   22
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 50.0,
+  "run_at": "2026-10-26T22:02:38"
+ },
+ {
+  "id": "maze_050",
+  "optimal_length": 17,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4242,
+   "total_tokens": 5066,
+   "cost": 0.0022034,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022034,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002121
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3899,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 15 moves. I read the wall positions from the image by pixel coordinates, so this is a careful reading rather than a computed guarantee.\n\nCoordinates are (row, column) from the top-left, with the start at (6,9) and the goal at (9,1).\n\n1. Go down from the start to the bottom-right area: D, D, D to (9,9).\n2. Move left to (9,8), then up to (8,8). The wall above (8,8) blocks any other way into row 8 from the right.\n3. Travel left along row 8 from (8,8) to (8,3), which is clear of vertical walls in that row.\n4. Drop down to (9,3), then left to (9,2). The wall between (9,1) and (9,2) blocks a direct move into the goal.\n5. Go up to (8,2), left to (8,1), then down into the goal at (9,1).\n\nThe Manhattan distance is 11, so 15 moves is not necessarily the global minimum, but I did not find a shorter route.\n\nANSWER: DDDLULLLLLDLULD",
+  "reasoning": null,
+  "moves": "DDDLULLLLLDLULD",
+  "status": "failed",
+  "note": "hit a wall at move 7; ignored 1 wall(s) (moves 7), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   7
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 20.3,
+  "run_at": "2026-10-26T22:02:40"
+ },
+ {
+  "id": "maze_051",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4401,
+   "total_tokens": 5225,
+   "cost": 0.0022829,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022829,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0022005
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4090,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Path\n\nI read the grid as 10x10 cells, with columns 0\u20139 left to right and rows 0\u20139 top to bottom. The start is at (col 0, row 9) and the goal is at (col 1, row 3).\n\n1. **R** to (1,9), then **R** to (2,9).\n2. **U** to (2,8), then **U** to (2,7).\n3. **R** to (3,7), then **U** to (3,6), then **U** to (3,5).\n4. **L** to (2,5), then **L** to (1,5).\n5. **U** to (1,4), then **U** to (1,3), which is the goal.\n\nThe direct route up the left column is blocked by the horizontal wall above row 7 in columns 0\u20131, and the cells near the start on row 8 are dead ends, so this detour through column 2 and column 3 is needed. I could not verify every wall segment precisely from the image, so this path is my best reading.\n\nANSWER: RRUURUULLUU",
+  "reasoning": null,
+  "moves": "RRUURUULLUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 21.8,
+  "run_at": "2026-10-26T22:02:45"
+ },
+ {
+  "id": "maze_052",
+  "optimal_length": 20,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5926,
+   "total_tokens": 6750,
+   "cost": 0.0030454,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0030454,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002963
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5762,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image, so the wall positions are estimates and the route is the shortest I could verify, not a guaranteed optimum.\n\nThe start is the bottom-right cell (row 9, column 9, counting from the top-left) and the goal is the top row, column 8. The route goes left along the bottom row, climbs column 7 to row 3, then works back left and up through the middle of the top section to reach the goal from the left.\n\nANSWER: LLUUUUUULDLUURULURRR",
+  "reasoning": null,
+  "moves": "LLUUUUUULDLUURULURRR",
+  "status": "failed",
+  "note": "hit a wall at move 3; ignored 2 wall(s) (moves 3, 6), ends at the goal",
+  "walls_ignored": 2,
+  "wall_moves": [
+   3,
+   6
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 25.8,
+  "run_at": "2026-10-26T22:02:47"
+ },
+ {
+  "id": "maze_053",
+  "optimal_length": 44,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5407,
+   "total_tokens": 6231,
+   "cost": 0.0027859,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027859,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0027035
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5292,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze from the image, but I could not read every wall segment with certainty, so this path is my best reading rather than a verified shortest route.\n\nThe path runs along the top row to the column 7 corridor, down into the middle-right area, then through the row 5 corridor to the goal from the right.\n\nANSWER: RRRRDDDLDRRDLDDL",
+  "reasoning": null,
+  "moves": "RRRRDDDLDRRDLDDL",
+  "status": "failed",
+  "note": "hit a wall at move 8; ignored 2 wall(s) (moves 8, 13), ends at the goal",
+  "walls_ignored": 2,
+  "wall_moves": [
+   8,
+   13
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 26.7,
+  "run_at": "2026-10-26T22:02:52"
+ },
+ {
+  "id": "maze_054",
+  "optimal_length": 20,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 7727,
+   "total_tokens": 8551,
+   "cost": 0.0039459,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0039459,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0038635
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7558,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image. The shortest route I found is 28 moves. I checked the walls along the route, but did not exhaustively prove that no shorter route exists.\n\nThe green start is enclosed on its left and below, so the route first goes right along the top row, down the right side of the upper area, and back left to reach column 6 at row 3. It then winds down and to the left through the lower middle to the bottom-left corner.\n\nANSWER: RRDDLLDDRURDRDDLLDLLLDULLLD",
+  "reasoning": null,
+  "moves": "RRDDLLDDRURDRDDLLDLLLDULLLD",
+  "status": "failed",
+  "note": "hit a wall at move 6; ignored 3 wall(s) (moves 6, 24, 27), does not end at the goal",
+  "walls_ignored": 3,
+  "wall_moves": [
+   6,
+   24,
+   27
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 36.2,
+  "run_at": "2026-10-26T22:02:56"
+ },
+ {
+  "id": "maze_055",
+  "optimal_length": 21,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5982,
+   "total_tokens": 6806,
+   "cost": 0.0030734,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0030734,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002991
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5830,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image, so the wall positions are my reading of the picture. The route below is 21 moves.\n\nFrom the green cell at the bottom-right, I go left along the bottom row to column 3, then up and around through the lower-left area. From there I reach column 0 and loop up to the red cell from its left side, because the wall under the red cell and the wall on its right block the other approaches.\n\nANSWER: LLLLLLUULDDLULUURULUR",
+  "reasoning": null,
+  "moves": "LLLLLLUULDDLULUURULUR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 28.0,
+  "run_at": "2026-10-26T22:02:59"
+ },
+ {
+  "id": "maze_056",
+  "optimal_length": 5,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1565,
+   "total_tokens": 2389,
+   "cost": 0.0008649,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0008649,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0007825
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1455,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 5 moves: down, down, right, down, down. The green start is at row 1, column 0 and the red goal is at row 5, column 1. That is 4 rows and 1 column apart, so 5 moves is the minimum possible, and this path avoids every wall I could identify in the image.\n\nANSWER: DDRDD",
+  "reasoning": null,
+  "moves": "DDRDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 8.4,
+  "run_at": "2026-10-26T22:03:00"
+ },
+ {
+  "id": "maze_057",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3558,
+   "total_tokens": 4382,
+   "cost": 0.0018614,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018614,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001779
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3357,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 7 moves: up three cells, right two, down one, then right into the red cell. I traced the walls by eye from the image, so this is the best path I could verify rather than a fully exhaustive search.\n\nCoordinates are (column, row) from the top-left, starting at 0. The green start is (0,8) and the red goal is (3,6).\n\n1. U to (0,7)\n2. U to (0,6)\n3. U to (0,5)\n4. R to (1,5)\n5. R to (2,5)\n6. D to (2,6)\n7. R to (3,6), the goal\n\nANSWER: UUURRDR",
+  "reasoning": null,
+  "moves": "UUURRDR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 17.8,
+  "run_at": "2026-10-26T22:03:07"
+ },
+ {
+  "id": "maze_058",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 8165,
+   "total_tokens": 8989,
+   "cost": 0.0041649,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0041649,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0040825
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8040,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image, so a wall misread is possible. This 19-move path is the shortest I could find under that reading.\n\nThe route goes west along the bottom row, climbs through the middle-left, enters the top-left pocket at row 3, and then runs up column 0 and along the top row to the red cell.\n\nANSWER: LLURUUULLLUULUUURRR",
+  "reasoning": null,
+  "moves": "LLURUUULLLUULUUURRR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 38.1,
+  "run_at": "2026-10-26T22:03:08"
+ },
+ {
+  "id": "maze_059",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2094,
+   "total_tokens": 2918,
+   "cost": 0.0011294,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011294,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001047
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1992,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 7 moves. From the start, go down one cell, then right two cells along row 2 of the grid, down one more, right two more, and finally up into the red cell. Walls block the direct routes along row 1 and across the top row, so this is the shortest path I found.\n\nANSWER: DRRDRRU",
+  "reasoning": null,
+  "moves": "DRRDRRU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 11.3,
+  "run_at": "2026-10-26T22:03:12"
+ },
+ {
+  "id": "maze_060",
+  "optimal_length": 17,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6488,
+   "total_tokens": 7312,
+   "cost": 0.0033264,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0033264,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003244
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6131,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nI located the start at row 9, column 3 (counting rows from the top and columns from the left, both from 0) and the goal at row 4, column 1. The shortest route I found goes up through the middle of the maze, around the wall segment that blocks the direct approach to the goal from below, and then comes back down column 3 into row 4.\n\n1. R to (9,4)\n2. U to (8,4)\n3. L to (8,3)\n4. U to (7,3)\n5. U to (6,3)\n6. R to (6,4)\n7. R to (6,5)\n8. U to (5,5)\n9. U to (4,5)\n10. L to (4,4)\n11. U to (3,4)\n12. U to (2,4)\n13. L to (2,3)\n14. D to (3,3)\n15. D to (4,3)\n16. L to (4,2)\n17. L to (4,1), the goal\n\nI checked each move against the walls I could make out in the image. I did not exhaustively search every alternative, so I can only say this is the shortest path I found, not a proven minimum.\n\nANSWER: RULUURRUULUUDDLL",
+  "reasoning": null,
+  "moves": "RULUURRUULUUDDLL",
+  "status": "failed",
+  "note": "hit a wall at move 15; ignored 1 wall(s) (moves 15), does not end at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   15
+  ],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 31.2,
+  "run_at": "2026-10-26T22:03:19"
+ },
+ {
+  "id": "maze_061",
+  "optimal_length": 4,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1813,
+   "total_tokens": 2637,
+   "cost": 0.0009889,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009889,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0009065
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1623,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 4 moves, which equals the Manhattan distance from the green cell to the red cell (3 rows up, 1 column left), so no shorter path exists.\n\nTaking rows and columns counted from the top-left, the green start is at row 5, column 9 and the red goal is at row 2, column 8. The path is:\n\n1. U: green (row 5, col 9) to (row 4, col 9)\n2. U: to (row 3, col 9)\n3. L: to (row 3, col 8)\n4. U: to the red goal (row 2, col 8)\n\nANSWER: UULU",
+  "reasoning": null,
+  "moves": "UULU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.0,
+  "run_at": "2026-10-26T22:03:24"
+ },
+ {
+  "id": "maze_062",
+  "optimal_length": 12,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4085,
+   "total_tokens": 4909,
+   "cost": 0.0021249,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021249,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0020425
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3910,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell. The green start is at column 4, row 9 (counting from the top-left), and the red goal is at column 2, row 5.\n\nThe route goes left along the bottom area, up through column 3 into the row-7 corridor, then along row 7 to the left edge. From there it climbs to row 6, steps up into row 5, and moves right to the goal. Each move was checked against the walls.\n\nThe 10 moves are: L, U, U, L, L, L, U, R, U, R.\n\nANSWER: LUULLLURUR",
+  "reasoning": null,
+  "moves": "LUULLLURUR",
+  "status": "failed",
+  "note": "hit a wall at move 3; ignored 1 wall(s) (moves 3), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   3
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 19.8,
+  "run_at": "2026-10-26T22:03:24"
+ },
+ {
+  "id": "maze_063",
+  "optimal_length": 19,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5354,
+   "total_tokens": 6178,
+   "cost": 0.0027594,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0027594,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002677
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5159,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 21 moves. I traced the walls from the image cell by cell, so the wall positions are read by eye and the path is the best I found rather than a formally verified shortest.\n\nRoute: start at row 1, column 0. Go up to the top row, right four cells, down, right, up, right, down to row 2, left twice, down to row 3, right, down twice to row 5, right, down to row 6, then left twice to the red cell.\n\nANSWER: URRRRDRUR DDLLDRDDRDLL\n\nWritten without spaces: URRRRDRURDDLLDRDDRDLL",
+  "reasoning": null,
+  "moves": "URRRRDRURDDLLDRDDRDLL",
+  "status": "solved",
+  "note": "21 moves vs optimal 19",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 23.6,
+  "run_at": "2026-10-26T22:03:27"
+ },
+ {
+  "id": "maze_064",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1385,
+   "total_tokens": 2209,
+   "cost": 0.0007749,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007749,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0006925
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1249,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 10 moves, which equals the Manhattan distance from the green cell (row 0, column 1) to the red cell (row 9, column 0). The path is one step left to column 0, then nine steps straight down that column. No thick walls cross column 0 between the top and bottom rows, and the wall below the green cell only covers column 1, so the path is clear.\n\nANSWER: LDDDDDDDDD",
+  "reasoning": null,
+  "moves": "LDDDDDDDDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 7.7,
+  "run_at": "2026-10-26T22:03:28"
+ },
+ {
+  "id": "maze_065",
+  "optimal_length": 20,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6203,
+   "total_tokens": 7027,
+   "cost": 0.0031839,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031839,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0031015
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5931,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 10 moves: UUURURRULL. I read the wall positions from the image by estimating pixel coordinates, so one or two wall segments near the right side (especially the short vertical wall between columns 7 and 8 in row 5) are uncertain. The path avoids them.\n\nPath, from the start (row 9, column 5) to the goal (row 4, column 6), counting rows from the top:\n1. U to row 8, column 5\n2. U to row 7, column 5\n3. U to row 6, column 5\n4. R to row 6, column 6\n5. U to row 5, column 6\n6. R to row 5, column 7\n7. R to row 5, column 8\n8. U to row 4, column 8\n9. L to row 4, column 7\n10. L to row 4, column 6 (goal)\n\nANSWER: UUURURRULL",
+  "reasoning": null,
+  "moves": "UUURURRULL",
+  "status": "failed",
+  "note": "hit a wall at move 7; ignored 1 wall(s) (moves 7), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   7
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 29.7,
+  "run_at": "2026-10-26T22:03:32"
+ },
+ {
+  "id": "maze_066",
+  "optimal_length": 8,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2276,
+   "total_tokens": 3100,
+   "cost": 0.0012204,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012204,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001138
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2001,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 8 moves: up, right, right, up, up, right, down, right. I traced the walls by hand from the image, so treat it as a checked path rather than a proven optimum.\n\nStart is at column 0, row 3 (counting from the top-left). Goal is at column 4, row 1.\n\n1. U: (0,3) \u2192 (0,2)\n2. R: (0,2) \u2192 (1,2)\n3. R: (1,2) \u2192 (2,2)\n4. U: (2,2) \u2192 (2,1)\n5. U: (2,1) \u2192 (2,0)\n6. R: (2,0) \u2192 (3,0)\n7. D: (3,0) \u2192 (3,1)\n8. R: (3,1) \u2192 (4,1), the red cell\n\nThe Manhattan distance is 6, so 8 moves is close to the minimum for this layout.\n\nANSWER: URRUURDR",
+  "reasoning": null,
+  "moves": "URRUURDR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 11.3,
+  "run_at": "2026-10-26T22:03:32"
+ },
+ {
+  "id": "maze_067",
+  "optimal_length": 18,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 6083,
+   "total_tokens": 6907,
+   "cost": 0.0031239,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0031239,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0030415
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5599,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Solution\n\nI placed the grid with rows 0\u20139 from top to bottom and columns 0\u20139 from left to right. The green start is at (row 6, col 0) and the red goal is at (row 9, col 5).\n\nThe goal cell is walled off from above by a horizontal wall, and from the right by a vertical wall, so the route must reach the bottom row from the left. The path I found runs through the upper-left area, down the middle column 3, and along the bottom row.\n\n1. U: (6,0) \u2192 (5,0)\n2. R: (5,0) \u2192 (5,1)\n3. U: (5,1) \u2192 (4,1)\n4. R: (4,1) \u2192 (4,2)\n5. R: (4,2) \u2192 (4,3)\n6. D: (4,3) \u2192 (5,3)\n7. L: (5,3) \u2192 (5,2)\n8. D: (5,2) \u2192 (6,2)\n9. R: (6,2) \u2192 (6,3)\n10. D: (6,3) \u2192 (7,3)\n11. D: (7,3) \u2192 (8,3)\n12. L: (8,3) \u2192 (8,2)\n13. D: (8,2) \u2192 (9,2)\n14. R: (9,2) \u2192 (9,3)\n15. R: (9,3) \u2192 (9,4)\n16. R: (9,4) \u2192 (9,5) (goal)\n\nI read the wall positions from the image by estimating coordinates and did not exhaustively verify every alternative, so this is the shortest path I found rather than a proven optimum.\n\nANSWER: ULURRDLDRDDLDRRR",
+  "reasoning": null,
+  "moves": "ULURRDLDRDDLDRRR",
+  "status": "failed",
+  "note": "left the grid at move 2",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": false,
+  "seconds": 27.1,
+  "run_at": "2026-10-26T22:03:33"
+ },
+ {
+  "id": "maze_068",
+  "optimal_length": 17,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 8024,
+   "total_tokens": 8848,
+   "cost": 0.0040944,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0040944,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.004012
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 7817,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze on the grid. The shortest route I found is 15 moves, starting at the green cell (column 2, row 9 counting from the top-left) and ending at the red cell (column 1, row 1).\n\nThe route goes right twice along the bottom, up four cells in column 4, right into column 5, up one, then back left through row 4 to column 3. From there it climbs to row 2, moves left to column 2, and finishes with a move up and a move left into the goal.\n\nI checked each move against the walls as I read them from the image, but the thin spacing of some wall segments makes a misread possible.\n\nANSWER: RRUUUURULLUULUL",
+  "reasoning": null,
+  "moves": "RRUUUURULLUULUL",
+  "status": "failed",
+  "note": "hit a wall at move 12; ignored 1 wall(s) (moves 12), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   12
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 38.1,
+  "run_at": "2026-10-26T22:03:36"
+ },
+ {
+  "id": "maze_069",
+  "optimal_length": 7,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1719,
+   "total_tokens": 2543,
+   "cost": 0.0009419,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009419,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0008595
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1573,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path takes 7 moves, which equals the Manhattan distance from the start (row 2, column 0) to the goal (row 5, column 4), so no shorter route is possible.\n\nThe path goes right along the top-left corridor to column 3, then down through rows 3\u20135, and finally right into the red cell. I checked that none of these moves crosses a wall, though I read the wall positions from the image by estimate.\n\nANSWER: RRRDDDR",
+  "reasoning": null,
+  "moves": "RRRDDDR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 9.5,
+  "run_at": "2026-10-26T22:03:44"
+ },
+ {
+  "id": "maze_070",
+  "optimal_length": 32,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 13266,
+   "total_tokens": 14090,
+   "cost": 0.0067154,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0067154,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.006633
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 13158,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image, so this path comes from my reading of the maze rather than a verified search. It is 28 moves: out of the start, up the left side, across the top-left, down the middle, and then right and down to the red cell.\n\nANSWER: RULURUUULURUURRDDDDRRRDRRDDR",
+  "reasoning": null,
+  "moves": "RULURUUULURUURRDDDDRRRDRRDDR",
+  "status": "failed",
+  "note": "hit a wall at move 21; ignored 1 wall(s) (moves 21), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   21
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 60.4,
+  "run_at": "2026-10-26T22:03:44"
+ },
+ {
+  "id": "maze_071",
+  "optimal_length": 3,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1300,
+   "total_tokens": 2124,
+   "cost": 0.0007324,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007324,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.00065
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1087,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nThe green start is at row 0, column 6, and the red goal is directly below it at row 1, column 6. A thick wall runs along the boundary between them, so I went around it.\n\n1. **R**: move from the start to row 0, column 7. The top-row cell to the right is open.\n2. **D**: move down to row 1, column 7. The horizontal wall above row 1 ends at the boundary between columns 6 and 7, so column 7 is open.\n3. **L**: move left into the red goal at row 1, column 6.\n\nThat is 3 moves. A 1-move path is blocked by the wall, so 3 is the shortest.\n\nANSWER: RDL",
+  "reasoning": null,
+  "moves": "RDL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.8,
+  "run_at": "2026-10-26T22:03:46"
+ },
+ {
+  "id": "maze_072",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2630,
+   "total_tokens": 3454,
+   "cost": 0.0013974,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013974,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001315
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2499,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 10 moves. I read the wall positions from the image by estimating grid coordinates, so the route is checked against my reading of the walls rather than a verified solver.\n\nThe route runs up the right-hand column from the green cell to row 4, then weaves left and up into the red cell from its right side, since the walls above and below the red cell block those approaches.\n\nANSWER: UUUUULULUL",
+  "reasoning": null,
+  "moves": "UUUUULULUL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 13.2,
+  "run_at": "2026-10-26T22:03:50"
+ },
+ {
+  "id": "maze_073",
+  "optimal_length": 27,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5727,
+   "total_tokens": 6551,
+   "cost": 0.0029459,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0029459,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0028635
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5565,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls from the image and found a route of 17 moves. The route goes right along the top row, then down column 5 to row 6, across to column 6, down to the bottom row, and back left and up into the goal from the left.\n\nI could not confirm one wall segment, the short horizontal one at the top of row 3 in column 5. I read it as absent, since otherwise the start region has no exit. If that reading is wrong, the answer would change.\n\nANSWER: RRRDDDDDDRDDDLLUR",
+  "reasoning": null,
+  "moves": "RRRDDDDDDRDDDLLUR",
+  "status": "failed",
+  "note": "hit a wall at move 6; ignored 1 wall(s) (moves 6), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   6
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 26.7,
+  "run_at": "2026-10-26T22:03:51"
+ },
+ {
+  "id": "maze_074",
+  "optimal_length": 4,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2168,
+   "total_tokens": 2992,
+   "cost": 0.0011664,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011664,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001084
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1959,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 4 moves: up out of the start, left twice along the row above it, then up into the red cell.\n\nStart is at row 9, column 2 (counting from the top-left, both from 0). Red is at row 7, column 0.\n\n1. **U** to row 8, column 2. No wall separates them.\n2. **L** to row 8, column 1. No wall separates them.\n3. **L** to row 8, column 0. No wall separates them.\n4. **U** to row 7, column 0, the red cell. No wall separates them.\n\nI read the wall positions from the image by eye, so the path is only as reliable as that reading.\n\nANSWER: ULLU",
+  "reasoning": null,
+  "moves": "ULLU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.3,
+  "run_at": "2026-10-26T22:03:53"
+ },
+ {
+  "id": "maze_075",
+  "optimal_length": 3,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 988,
+   "total_tokens": 1812,
+   "cost": 0.0005764,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005764,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000494
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 867,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 3 moves. From the green cell (row 0, column 2), move right to column 3, down to row 1, then right into the red cell (row 1, column 4). Each step is one cell and no wall lies between the cells along this path. Since the goal is 1 row down and 2 columns right, no path can be shorter than 3 moves.\n\nANSWER: RDR",
+  "reasoning": null,
+  "moves": "RDR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.1,
+  "run_at": "2026-10-26T22:03:53"
+ },
+ {
+  "id": "maze_076",
+  "optimal_length": 22,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 8871,
+   "total_tokens": 9695,
+   "cost": 0.0045179,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0045179,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0044355
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 8741,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze cell by cell from the image, so the wall positions are my reading of the picture rather than verified coordinates. The route below is 24 moves.\n\nPath: down three cells, left two, down one, right one, down two, left one, down one, right three, down one, left three, down one, left one, up three, left one.\n\nANSWER: DDDLLDRDDLDRRRDLLLDLUUUL",
+  "reasoning": null,
+  "moves": "DDDLLDRDDLDRRRDLLLDLUUUL",
+  "status": "solved",
+  "note": "24 moves vs optimal 22",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 43.7,
+  "run_at": "2026-10-26T22:03:59"
+ },
+ {
+  "id": "maze_077",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5755,
+   "total_tokens": 6579,
+   "cost": 0.0029599,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0029599,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0028775
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5597,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I read the maze from the image and traced a route from the green cell (top-right corner) to the red cell (left edge, row 4). I checked each move against the walls, but the image is hard to read precisely, so treat the wall positions as my best reading.\n\nThe route is 14 moves: down from the start, left along the top corridor to the column below the long wall, down, left to column 3, up around a wall, left, down, left, down, and left into the red cell.\n\nANSWER: DLLLLDLLULDLDL",
+  "reasoning": null,
+  "moves": "DLLLLDLLULDLDL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 27.7,
+  "run_at": "2026-10-26T22:04:00"
+ },
+ {
+  "id": "maze_078",
+  "optimal_length": 43,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2063,
+   "total_tokens": 2887,
+   "cost": 0.0011139,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0011139,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0010315
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1851,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the route by reading the wall positions from the image. The green start is at row 0, column 6, and the red goal is at row 1, column 0.\n\nThe start cell's left side is walled off, so the path goes down one cell, across, and back up into the top row. From there the top row is open all the way to the goal's column, and the goal sits just below the top-left corner.\n\nRoute: down to (1,6), left to (1,5), up to (0,5), left five times to (0,0), then down to the goal (1,0).\n\nThis is 9 moves. I could not confirm every thin wall segment with certainty, so the route is based on my reading of the image.\n\nANSWER: DLULLLLLD",
+  "reasoning": null,
+  "moves": "DLULLLLLD",
+  "status": "failed",
+  "note": "hit a wall at move 2; ignored 1 wall(s) (moves 2), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   2
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 10.5,
+  "run_at": "2026-10-26T22:04:02"
+ },
+ {
+  "id": "maze_079",
+  "optimal_length": 2,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 874,
+   "total_tokens": 1698,
+   "cost": 0.0005194,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005194,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000437
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 704,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The green start is at row 9, column 7 (counting from the top-left as row 0, column 0), and the red goal is at row 8, column 6.\n\nFrom the start, move left to row 9, column 6. There is no wall between those two cells. Then move up to row 8, column 6, which is the goal. The wall segment above row 9 only covers columns 5 and 7, so column 6 is open.\n\nThis is the shortest possible path, since the goal is diagonally adjacent to the start and cannot be reached in one move.\n\nANSWER: LU",
+  "reasoning": null,
+  "moves": "LU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 5.6,
+  "run_at": "2026-10-26T22:04:03"
+ },
+ {
+  "id": "maze_080",
+  "optimal_length": 15,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3777,
+   "total_tokens": 4601,
+   "cost": 0.0019709,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0019709,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0018885
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3652,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path I found is 21 moves: 8 left along the top row, down 3 to row 3, right 3, down 4, left 2, then down into the red cell. I traced it against the walls by reading the image, so a misread wall could change the result. I did not exhaustively prove no shorter route exists.\n\nANSWER: LLLLLLLLDDDRRRDDDDLLD",
+  "reasoning": null,
+  "moves": "LLLLLLLLDDDRRRDDDDLLD",
+  "status": "solved",
+  "note": "21 moves vs optimal 15",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 19.1,
+  "run_at": "2026-10-26T22:04:05"
+ },
+ {
+  "id": "maze_081",
+  "optimal_length": 8,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4161,
+   "total_tokens": 4985,
+   "cost": 0.0021629,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0021629,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0020805
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4048,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path is 8 moves, which matches the Manhattan distance from start (row 0, column 9) to goal (row 6, column 7): 6 rows down and 2 columns left.\n\nRoute: down to row 1, left to column 8, down to row 3, left to column 7, then down to the red cell.\n\nANSWER: DLDDLDDD",
+  "reasoning": null,
+  "moves": "DLDDLDDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 19.2,
+  "run_at": "2026-10-26T22:04:09"
+ },
+ {
+  "id": "maze_082",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4794,
+   "total_tokens": 5618,
+   "cost": 0.0024794,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0024794,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002397
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4440,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nI located the start at row 0, column 3 and the goal at row 6, column 5, then traced a path that avoids the thick walls.\n\n1. **R** to row 0, column 4.\n2. **D** to row 1, column 4 (no wall below).\n3. **D** to row 2, column 4 (no wall below).\n4. **R** to row 2, column 5.\n5. **D** to row 3, column 5 (the wall under row 2 ends at column 4).\n6. **R** to row 3, column 6 (the vertical wall at this height is absent).\n7. **D** five times down column 6, through rows 4\u20138. The walls on both sides of column 6 run along rows 4\u20137, so this column is clear.\n8. **L** to row 8, column 5 (the wall at column 6 stops at row 7).\n9. **U** to row 7, column 5.\n10. **U** to row 6, column 5, the goal.\n\nThis is 14 moves. I did not exhaustively prove it is the shortest possible route, but every move was checked against the walls.\n\nANSWER: RDDRDRDDDDDLUU",
+  "reasoning": null,
+  "moves": "RDDRDRDDDDDLUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 22.2,
+  "run_at": "2026-10-26T22:04:13"
+ },
+ {
+  "id": "maze_083",
+  "optimal_length": 2,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1090,
+   "total_tokens": 1914,
+   "cost": 0.0006274,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006274,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000545
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 922,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The green start is at row 1, column 0 (counting from the top-left as row 0, column 0), and the red goal is at row 2, column 1. They are diagonal neighbours, so no single move reaches the goal.\n\nTwo moves work:\n1. **D** from row 1, column 0 to row 2, column 0. The wall under the start only spans column 1, so this step is open.\n2. **R** from row 2, column 0 to row 2, column 1, the red goal. I see no wall between these two cells.\n\nANSWER: DR",
+  "reasoning": null,
+  "moves": "DR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.9,
+  "run_at": "2026-10-26T22:04:14"
+ },
+ {
+  "id": "maze_084",
+  "optimal_length": 16,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 4310,
+   "total_tokens": 5134,
+   "cost": 0.0022374,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0022374,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.002155
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 4039,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 14 moves. I read the maze as a 10x10 grid with columns 0\u20139 left to right and rows 0\u20139 top to bottom, so the green start is at (col 3, row 9) and the red goal is at (col 4, row 0).\n\nThe goal can only be entered from below (col 4, row 1) or from the right (col 5, row 0). The upper-left area is a dead end that connects to the goal only through it. So the route has to reach the column 5\u20136 corridor and come up to (col 4, row 2), then (col 4, row 1), then the goal.\n\nThe path is: up to (3,8), right to (4,8), up to (4,7), right to (5,7), up to (5,5), right to (6,5), up to (6,2), left to (4,2), then up to the goal.\n\nANSWER: URURUURUUULLUU",
+  "reasoning": null,
+  "moves": "URURUURUUULLUU",
+  "status": "failed",
+  "note": "hit a wall at move 14; ignored 1 wall(s) (moves 14), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   14
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 21.5,
+  "run_at": "2026-10-26T22:04:18"
+ },
+ {
+  "id": "maze_085",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3491,
+   "total_tokens": 4315,
+   "cost": 0.0018279,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0018279,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0017455
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3361,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I can read from the image is 10 moves, going right and up through the lower-left area, then up the left column and back right into the goal. I traced the walls from the image by eye, so the exact wall positions are an estimate.\n\nPath: from the green cell (bottom-left), R, R, U, U, L, L, U, U, R, U to reach the red cell.\n\nANSWER: RRUULLUURU",
+  "reasoning": null,
+  "moves": "RRUULLUURU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 17.2,
+  "run_at": "2026-10-26T22:04:21"
+ },
+ {
+  "id": "maze_086",
+  "optimal_length": 13,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 7182,
+   "total_tokens": 8006,
+   "cost": 0.0036734,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0036734,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003591
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6943,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 15 moves. Going up the left column is the only way out of the start, and then the path loops through the middle to reach the goal from below-right.\n\nCoordinates are (row, column) from the top-left, with the start at (9,0) and the goal at (2,4).\n\n1. Go up column 0 from row 9 to row 4 (5 moves U). Row 9 is walled off to the right, so this is forced.\n2. Go right to (4,2), then down to (5,2) and right to (5,3).\n3. Go up to (4,3), then right to (4,4) and (4,5).\n4. Go up to (3,5) and (2,5), then left into the goal at (2,4).\n\nANSWER: UUUUURRDRURRUUL",
+  "reasoning": null,
+  "moves": "UUUUURRDRURRUUL",
+  "status": "solved",
+  "note": "15 moves vs optimal 13",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 32.6,
+  "run_at": "2026-10-26T22:04:25"
+ },
+ {
+  "id": "maze_087",
+  "optimal_length": 3,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1148,
+   "total_tokens": 1972,
+   "cost": 0.0006564,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006564,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000574
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1067,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The green start cell is directly below the red goal, but a thick wall lies on the boundary between them, so the direct UP move is blocked. Going around takes three moves: left into the open column, up one cell, then right into the goal.\n\nANSWER: LUR",
+  "reasoning": null,
+  "moves": "LUR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.7,
+  "run_at": "2026-10-26T22:04:28"
+ },
+ {
+  "id": "maze_088",
+  "optimal_length": 3,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1111,
+   "total_tokens": 1935,
+   "cost": 0.0006379,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006379,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0005555
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1039,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 3 moves: down twice from the green cell, then right into the red cell. The Manhattan distance is 3 (two rows down, one column right), so no path can be shorter.\n\nANSWER: DDR",
+  "reasoning": null,
+  "moves": "DDR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.6,
+  "run_at": "2026-10-26T22:04:28"
+ },
+ {
+  "id": "maze_089",
+  "optimal_length": 9,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1379,
+   "total_tokens": 2203,
+   "cost": 0.0007719,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007719,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0006895
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1242,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path is 9 moves. Starting from the green cell (row 2, column 0), go down to row 3, step right, down to row 4, step back left, then go down five times to the red cell (row 9, column 0). The bottom-left column is open all the way down, and the straight-line distance is 7 rows, so a 9-move route is the minimum possible given the parity constraint.\n\nANSWER: DRDLDDDDD",
+  "reasoning": null,
+  "moves": "DRDLDDDDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 7.7,
+  "run_at": "2026-10-26T22:04:34"
+ },
+ {
+  "id": "maze_090",
+  "optimal_length": 28,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 16261,
+   "total_tokens": 17085,
+   "cost": 0.0082129,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0082129,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0081305
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 16159,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze from the image, so this path is my best reading of the walls rather than a verified search. The route runs down and around the bottom-right, up column 6 into the middle, then through the upper-left to the red cell, for 22 moves.\n\nANSWER: DDLLLUUUULULLUULDLLUUR",
+  "reasoning": null,
+  "moves": "DDLLLUUUULULLUULDLLUUR",
+  "status": "failed",
+  "note": "hit a wall at move 13; ignored 1 wall(s) (moves 13), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   13
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 73.7,
+  "run_at": "2026-10-26T22:04:35"
+ },
+ {
+  "id": "maze_091",
+  "optimal_length": 5,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1204,
+   "total_tokens": 2028,
+   "cost": 0.0006844,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0006844,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000602
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 944,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest path has 5 moves, which equals the Manhattan distance from start to goal (4 columns right, 1 row down), so no shorter route exists.\n\nThe green start is at column 0, row 0, and the red goal is at column 4, row 1 (counting from the top-left). The path is:\n\n1. Right from (0,0) to (1,0). A wall blocks the way further right along the top row, and a wall below the start blocks going down.\n2. Right from (1,0) to (2,0).\n3. Down from (2,0) to (2,1). The wall under column 2 in row 1 blocks further down, so the path turns right.\n4. Right from (2,1) to (3,1).\n5. Right from (3,1) to (4,1), the red goal. No wall lies between these cells.\n\nANSWER: RRDRR",
+  "reasoning": null,
+  "moves": "RRDRR",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 6.8,
+  "run_at": "2026-10-26T22:04:35"
+ },
+ {
+  "id": "maze_092",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2395,
+   "total_tokens": 3219,
+   "cost": 0.0012799,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0012799,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0011975
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2260,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced a route down the left side of the maze, then across the bottom-left area to the red cell. I did not exhaustively check every alternative route, so I can't guarantee it is the shortest.\n\nPath: start at row 0, column 4. Go left four cells along the top row, down five cells along the left edge, right four cells along row 5, then down one into the red cell.\n\nANSWER: LLLLDDDDDRRRRD",
+  "reasoning": null,
+  "moves": "LLLLDDDDDRRRRD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 12.8,
+  "run_at": "2026-10-26T22:04:38"
+ },
+ {
+  "id": "maze_093",
+  "optimal_length": 17,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 3845,
+   "total_tokens": 4669,
+   "cost": 0.0020049,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0020049,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0019225
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 3654,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the maze on the grid and found a 17-move route. I checked each move against the wall positions, but I read the wall coordinates from the image by eye, so treat the route as checked against my reading of the walls.\n\nThe route goes up the right edge to row 5, left along row 5 to column 4, up to row 3, left along row 3 to the left edge, then down two cells to the red goal. The Manhattan distance is 13, so 17 is a close but not necessarily the absolute minimum; I did not exhaustively search every alternative.\n\nANSWER: UUUULLLLLUULLLLDD",
+  "reasoning": null,
+  "moves": "UUUULLLLLUULLLLDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 18.6,
+  "run_at": "2026-10-26T22:04:39"
+ },
+ {
+  "id": "maze_094",
+  "optimal_length": 14,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2581,
+   "total_tokens": 3405,
+   "cost": 0.0013729,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013729,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0012905
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2444,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls from the image and found a 14-move route. Starting at row 1, column 0 (0-indexed from the top-left), the path goes right twice, up through the top corridor, right along row 0 to the right edge, then down the right column to the red cell. I checked each step against the walls, but read the wall positions from the image by eye, so small misreadings are possible.\n\nANSWER: RRURRRRRRRDDDD",
+  "reasoning": null,
+  "moves": "RRURRRRRRRDDDD",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 13.1,
+  "run_at": "2026-10-26T22:04:42"
+ },
+ {
+  "id": "maze_095",
+  "optimal_length": 10,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2528,
+   "total_tokens": 3352,
+   "cost": 0.0013464,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0013464,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001264
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2137,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "## Route\n\nReading the maze as a grid, the green start is at row 7, column 9 (counting rows and columns from 0 at the top-left), and the red goal is at row 6, column 4.\n\nFrom the start, the only usable exit is downward, since the wall to the left of the start blocks that direction. The route runs down to the bottom row, left along the bottom row, then up through column 5 to the goal's row, and finally left into the goal:\n\n1. D: (7,9) \u2192 (8,9)\n2. D: (8,9) \u2192 (9,9)\n3. L: (9,9) \u2192 (9,8)\n4. L: (9,8) \u2192 (9,7)\n5. L: (9,7) \u2192 (9,6)\n6. L: (9,6) \u2192 (9,5)\n7. U: (9,5) \u2192 (8,5)\n8. U: (8,5) \u2192 (7,5)\n9. U: (7,5) \u2192 (6,5)\n10. L: (6,5) \u2192 (6,4), the red goal\n\nI traced this route by reading the wall positions from the image, so a misread wall near the bottom-right corner could change the route. I did not exhaustively check every alternative, so this is the shortest route I found rather than a proven minimum.\n\nANSWER: DDLLLLUUUL",
+  "reasoning": null,
+  "moves": "DDLLLLUUUL",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 13.5,
+  "run_at": "2026-10-26T22:04:42"
+ },
+ {
+  "id": "maze_096",
+  "optimal_length": 33,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 571,
+   "total_tokens": 1395,
+   "cost": 0.0003679,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003679,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.0002855
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 495,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The green cell is at row 0, column 5, and the red cell is directly to its left at row 0, column 4. The image shows no thick wall on the boundary between those two cells, so a single move left reaches the goal.\n\nANSWER: L",
+  "reasoning": null,
+  "moves": "L",
+  "status": "failed",
+  "note": "hit a wall at move 1; ignored 1 wall(s) (moves 1), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   1
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 4.2,
+  "run_at": "2026-10-26T22:04:43"
+ },
+ {
+  "id": "maze_097",
+  "optimal_length": 11,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 5480,
+   "total_tokens": 6304,
+   "cost": 0.0028224,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0028224,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.00274
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 5313,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "I traced the walls cell by cell from the image, using 0-indexed rows (top to bottom) and columns (left to right). The green start is at row 8, column 9, and the red goal is at row 4, column 6.\n\nThe route runs left along row 8 to column 4, up to row 6, right to column 6, then up into the goal. This is 11 moves. I did not exhaustively check every alternative, so I can't fully prove it is the shortest, but I found no shorter route.\n\nANSWER: LLLLLUURRUU",
+  "reasoning": null,
+  "moves": "LLLLLUURRUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 25.3,
+  "run_at": "2026-10-26T22:04:45"
+ },
+ {
+  "id": "maze_098",
+  "optimal_length": 22,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 7014,
+   "total_tokens": 7838,
+   "cost": 0.0035894,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0035894,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.003507
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 6734,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I can find is 12 moves. I read the wall positions from the image by estimating pixel coordinates, so this path is my best reading rather than a fully verified one.\n\nUsing (row, column) with the top-left cell as (0,0), the green start is at (0,8) and the red goal is at (4,8). The route goes left along the top row, drops down column 4, cuts right into the middle, then comes back over to the goal:\n\n1. L, L, L, L: (0,8) \u2192 (0,4)\n2. D, D: (0,4) \u2192 (2,4)\n3. R: (2,4) \u2192 (2,5)\n4. D: (2,5) \u2192 (3,5)\n5. R: (3,5) \u2192 (3,6)\n6. D: (3,6) \u2192 (4,6)\n7. R, R: (4,6) \u2192 (4,8), the goal\n\nANSWER: LLLLDDRDRDRR",
+  "reasoning": null,
+  "moves": "LLLLDDRDRDRR",
+  "status": "failed",
+  "note": "hit a wall at move 7; ignored 1 wall(s) (moves 7), ends at the goal",
+  "walls_ignored": 1,
+  "wall_moves": [
+   7
+  ],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 35.5,
+  "run_at": "2026-10-26T22:04:47"
+ },
+ {
+  "id": "maze_099",
+  "optimal_length": 5,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 1256,
+   "total_tokens": 2080,
+   "cost": 0.0007104,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007104,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.000628
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 1147,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route is 5 moves: up two cells, left one, then up two more. The start is at row 5, column 9 and the goal at row 1, column 8, so 5 moves is the minimum possible (4 rows plus 1 column). I read the walls from the image rather than verifying every edge exactly.\n\nANSWER: UULUU",
+  "reasoning": null,
+  "moves": "UULUU",
+  "status": "optimal",
+  "note": "",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 8.5,
+  "run_at": "2026-10-26T22:04:51"
+ },
+ {
+  "id": "maze_100",
+  "optimal_length": 6,
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 824,
+   "completion_tokens": 2896,
+   "total_tokens": 3720,
+   "cost": 0.0015304,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0015304,
+    "upstream_inference_prompt_cost": 8.24e-05,
+    "upstream_inference_completions_cost": 0.001448
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 2753,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "served_model": "anthropic/claude-haiku-5.5",
+  "provider": "Claude Platform on AWS",
+  "response": "The shortest route I found is 8 moves: down, left, up, left, left, up, right, up.\n\nReading the image as a grid with cells about 56 px wide, the green start is at row 8, column 9 (counting from 0 at the top-left), and the red goal is at row 6, column 7. Direct routes are blocked by walls, so the path goes around through the bottom row and up through the column-6 gap.\n\nANSWER: DLULLURU",
+  "reasoning": null,
+  "moves": "DLULLURU",
+  "status": "solved",
+  "note": "8 moves vs optimal 6",
+  "walls_ignored": 0,
+  "wall_moves": [],
+  "reaches_goal_ignoring_walls": true,
+  "seconds": 15.7,
+  "run_at": "2026-10-26T22:04:55"
+ }
+]

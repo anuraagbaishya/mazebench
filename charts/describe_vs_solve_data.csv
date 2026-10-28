@@ -1,0 +1,5 @@
+model,describe_wall_edge_accuracy_pct,solve_reached_goal_pct,solve_optimal_pct
+gemini-4-argon,99.84,80,67.5
+claude-haiku-5.5,96.56,70,56
+claude-sonnet-5.5,98.66,64,50
+gpt-6-luna,96.89,55.5,42

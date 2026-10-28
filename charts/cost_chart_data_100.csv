@@ -1,0 +1,6 @@
+model,mazes,wall_edge_accuracy_pct,billed_cost_per_maze_usd,output_tokens_per_maze,seconds_per_maze,on_cost_frontier,on_time_frontier
+gemini-4-argon,100,99.84,0.01021,732,12.0,1,1
+claude-sonnet-5.5,100,98.66,0.02064,1873,13.7,0,0
+claude-haiku-5.5,100,96.56,0.00213,4076,17.3,1,0
+gpt-6-luna,100,96.89,0.00222,4275,53.2,1,0
+qwen3.8-max-0902,100,95.08,0.06946,11329,188.5,0,0

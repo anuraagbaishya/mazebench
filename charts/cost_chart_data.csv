@@ -1,0 +1,14 @@
+model,mazes,wall_edge_accuracy_pct,billed_cost_per_maze_usd,output_tokens_per_maze,seconds_per_maze,on_cost_frontier,on_time_frontier
+gemini-4-argon,20,99.86,0.00979,690,12.3,1,1
+claude-sonnet-5.5,20,98.69,0.01995,1804,13.2,0,0
+claude-haiku-5.5,20,97.31,0.00205,3917,16.6,0,0
+gpt-6-luna,20,98.06,0.00202,3881,33.3,1,0
+nemotron-3.5-super-vl,20,60.19,0.00781,17192,42.6,0,0
+glm-5.3-flash (low effort),20,70.53,0.00355,6937,45.7,0,0
+muse-spark-1.3,20,80.58,0.13225,30902,107.2,0,0
+deepseek-v4.1-flash,20,60.36,0.03261,27086,121.7,0,0
+mimo-v2.6-pro,20,54.92,0.00909,10151,127.0,0,0
+minimax-m3.1-flash,20,89.17,0,17387,158.2,0,0
+qwen3.8-max-0902,20,96.56,0.07012,11439,183.3,0,0
+gemini-3.8-flash,20,94.28,0.11275,29785,190.3,0,0
+mistral-large-4-0,19,63.92,0.07022,33318,484.2,0,0

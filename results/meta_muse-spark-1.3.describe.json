@@ -1,0 +1,1522 @@
+[
+ {
+  "id": "maze_001",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 26403,
+   "total_tokens": 27247,
+   "cost": 0.11326775,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.11326775,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.11221275
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 26083,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 8],\n  \"goal\": [1, 1],\n  \"right_walls\": [\"100000000\", \"110100010\", \"110010110\", \"000010010\", \"001010110\", \"011100110\", \"001100110\", \"101100110\", \"100110100\", \"001000110\"],\n  \"down_walls\": [\"0011001100\", \"0001110000\", \"1001000101\", \"0001111000\", \"0001100100\", \"1100000000\", \"0110111000\", \"0101111100\", \"0010101000\"]\n}\n```",
+  "reasoning": "Describing maze grid coordinates and wall arrays without solving the maze under abstract output constraints.Parsing the grid image to map walls and locate the green start cell.Mapping wall segments and start and goal coordinates from the grid image.Deriving right and down wall arrays from the grid image coordinates.Refining wall segment detection by tracing visible black pixels and resolving ambiguous coordinates.Extending pixel tracing to map horizontal and vertical wall segments across the 10x10 grid.Extending vertical wall mapping to cover remaining columns and resolve red cell enclosure.Continuing right-wall parsing for remaining rows and validating column boundaries.Resolving ambiguous vertical wall positions for row2 columns and adjusting the mapping.Extending the cell-by-cell scan to determine remaining horizontal and vertical wall segments.",
+  "description": {
+   "start": [
+    9,
+    8
+   ],
+   "goal": [
+    1,
+    1
+   ],
+   "right_walls": [
+    "100000000",
+    "110100010",
+    "110010110",
+    "000010010",
+    "001010110",
+    "011100110",
+    "001100110",
+    "101100110",
+    "100110100",
+    "001000110"
+   ],
+   "down_walls": [
+    "0011001100",
+    "0001110000",
+    "1001000101",
+    "0001111000",
+    "0001100100",
+    "1100000000",
+    "0110111000",
+    "0101111100",
+    "0010101000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8333333333333334,
+   "wall_recall": 0.8153846153846154,
+   "wall_precision": 0.7464788732394366,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 91.3,
+  "run_at": "2026-10-20T18:30:54"
+ },
+ {
+  "id": "maze_002",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 27085,
+   "total_tokens": 27929,
+   "cost": 0.11616625,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.11616625,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.11511125
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 26784,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [5, 9],\n  \"goal\": [7, 1],\n  \"right_walls\": [\"000000001\", \"100001001\", \"011001010\", \"011100001\", \"010101000\", \"001101100\", \"101010100\", \"000001010\", \"000100110\", \"000000100\"],\n  \"down_walls\": [\"0001110000\", \"1001110011\", \"0100001010\", \"0010010000\", \"1100000010\", \"0000111000\", \"0000010000\", \"0100011000\", \"1010111100\"]\n}\n```",
+  "reasoning": "Analyzing the 10x10 grid image to map right and down walls from cell coordinates.Extending the wall mapping to identify additional thick horizontal and vertical segments.Extending the wall mapping to parse vertical segments in the second row.Continuing wall mapping by resolving ambiguous vertical segments and pixel positions.Refining the horizontal segment endpoints by matching grid intervals to pixel alignment.Extending endpoint mapping to additional horizontal and vertical wall segments.Reconstructing grid wall segments from the image to build right and down wall arrays.Parsing interior edges to set right and down wall flags across rows and columns.Extending parsing to additional right wall segments and validating adjacent vertical wall placements.",
+  "description": {
+   "start": [
+    5,
+    9
+   ],
+   "goal": [
+    7,
+    1
+   ],
+   "right_walls": [
+    "000000001",
+    "100001001",
+    "011001010",
+    "011100001",
+    "010101000",
+    "001101100",
+    "101010100",
+    "000001010",
+    "000100110",
+    "000000100"
+   ],
+   "down_walls": [
+    "0001110000",
+    "1001110011",
+    "0100001010",
+    "0010010000",
+    "1100000010",
+    "0000111000",
+    "0000010000",
+    "0100011000",
+    "1010111100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8,
+   "wall_recall": 0.676923076923077,
+   "wall_precision": 0.7457627118644068,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 91.4,
+  "run_at": "2026-10-20T18:30:54"
+ },
+ {
+  "id": "maze_003",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 18097,
+   "total_tokens": 18941,
+   "cost": 0.07796725,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.07796725,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.07691225
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 17766,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 5],\n  \"goal\": [3, 9],\n  \"right_walls\": [\"010000000\", \"010110000\", \"000101000\", \"000000000\", \"100000000\", \"000000000\", \"010001000\", \"101010000\", \"101000000\", \"000000000\"],\n  \"down_walls\": [\"0011001000\", \"1000011110\", \"0111110001\", \"0001110010\", \"0010000001\", \"0110110010\", \"0001101000\", \"0000111110\", \"0110111110\"]\n}\n```",
+  "reasoning": "Describing grid coordinates by numbering rows 0-9 top to bottom and columns 0-9 left to right while locating green and red cells.Mapping wall segments to binary strings for the right and down boundaries.Extending the mapping with interior thick wall segments and grid coordinates.Refining the wall mapping by distinguishing thick black segments from thin gray lines across grid edges.Extending the manual cell-by-cell trace to identify interior thick wall segments.Recording additional horizontal thick segments and adjusting column spans.Extending vertical edge checks and refining wall continuity across rows.Extending vertical edge checks to resolve ambiguous wall segments in the upper grid.Extending pixel analysis to confirm horizontal wall segments across columns 5-9.Extending pixel analysis to vertical wall segments across columns 1-9 for row 0.",
+  "description": {
+   "start": [
+    9,
+    5
+   ],
+   "goal": [
+    3,
+    9
+   ],
+   "right_walls": [
+    "010000000",
+    "010110000",
+    "000101000",
+    "000000000",
+    "100000000",
+    "000000000",
+    "010001000",
+    "101010000",
+    "101000000",
+    "000000000"
+   ],
+   "down_walls": [
+    "0011001000",
+    "1000011110",
+    "0111110001",
+    "0001110010",
+    "0010000001",
+    "0110110010",
+    "0001101000",
+    "0000111110",
+    "0110111110"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": false,
+   "goal_ok": true,
+   "edge_accuracy": 0.85,
+   "wall_recall": 0.7547169811320755,
+   "wall_precision": 0.7407407407407407,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 63.9,
+  "run_at": "2026-10-20T18:30:54"
+ },
+ {
+  "id": "maze_004",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 29091,
+   "total_tokens": 29935,
+   "cost": 0.12444205,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.12444205,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.12363675
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 28773,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 9],\n  \"goal\": [9, 6],\n  \"right_walls\": [\"010000000\", \"101001001\", \"100001001\", \"010100101\", \"010010101\", \"000010100\", \"100110110\", \"100000110\", \"010000101\", \"100001100\"],\n  \"down_walls\": [\"0001101000\", \"0001101100\", \"0100000000\", \"0000000000\", \"0011000001\", \"0000000000\", \"0010011000\", \"0100000010\", \"0011110000\"]\n}\n```",
+  "reasoning": "Parsing maze image coordinates and deriving right_walls bitmask strings from cell colors.Deriving internal right_walls bitmasks while excluding the outer border per the constraint.Extending the bitmask derivation to include vertical adjacency checks.Parsing the image to identify thick wall segments and map grid coordinates.Extending wall tracing to additional segments and refining column boundaries.Extending horizontal wall mapping to new x intervals and updating down_walls indices.Extending down_walls and right_walls updates for the lower staircase segments.Identifying additional vertical wall positions along the bottom row and right edge.Extending wall mapping to the right edge and lower-right corner with new vertical and horizontal segments.Continuing pixel-by-pixel wall mapping for the remaining middle columns.",
+  "description": {
+   "start": [
+    9,
+    9
+   ],
+   "goal": [
+    9,
+    6
+   ],
+   "right_walls": [
+    "010000000",
+    "101001001",
+    "100001001",
+    "010100101",
+    "010010101",
+    "000010100",
+    "100110110",
+    "100000110",
+    "010000101",
+    "100001100"
+   ],
+   "down_walls": [
+    "0001101000",
+    "0001101100",
+    "0100000000",
+    "0000000000",
+    "0011000001",
+    "0000000000",
+    "0010011000",
+    "0100000010",
+    "0011110000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8833333333333333,
+   "wall_recall": 0.7924528301886793,
+   "wall_precision": 0.8076923076923077,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 106.3,
+  "run_at": "2026-10-20T18:30:54"
+ },
+ {
+  "id": "maze_005",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 29800,
+   "total_tokens": 30644,
+   "cost": 0.127705,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.127705,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.12665
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 29434,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [4, 0],\n  \"goal\": [9, 9],\n  \"right_walls\": [\n    \"000001000\",\n    \"000000010\",\n    \"100000000\",\n    \"000001101\",\n    \"010100101\",\n    \"100000000\",\n    \"010001001\",\n    \"111001000\",\n    \"010000000\",\n    \"000000000\"\n  ],\n  \"down_walls\": [\n    \"0000101010\",\n    \"0000011000\",\n    \"0110010000\",\n    \"0011101100\",\n    \"0100000111\",\n    \"0001101100\",\n    \"0001110001\",\n    \"0001111000\",\n    \"0111111100\"\n  ]\n}\n```",
+  "reasoning": "Parsing the 10x10 maze grid to identify start and goal coordinates and extract right wall data from thick black lines.Filtering outer border segments while mapping interior horizontal and vertical wall segments.Extending filtering to detect interior horizontal segments between column 4 and 5.Mapping additional wall segments to right and down wall arrays for rows 1 through 3.Extending the wall mapping to additional rows while resolving ambiguous segment endpoints.Continuing the vertical wall scan for row 2 while recording thick edge positions.Extending the vertical wall scan to row 3 and adjusting thick edge positions.Extending the wall scan to rows 3 and 4 and mapping the right-side L-shaped boundary.Continuing the grid scan to lower rows and refining the bottom U-shaped boundary.Mapping visible thick polylines into wall segments and identifying gaps for the maze path.",
+  "description": {
+   "start": [
+    4,
+    0
+   ],
+   "goal": [
+    9,
+    9
+   ],
+   "right_walls": [
+    "000001000",
+    "000000010",
+    "100000000",
+    "000001101",
+    "010100101",
+    "100000000",
+    "010001001",
+    "111001000",
+    "010000000",
+    "000000000"
+   ],
+   "down_walls": [
+    "0000101010",
+    "0000011000",
+    "0110010000",
+    "0011101100",
+    "0100000111",
+    "0001101100",
+    "0001110001",
+    "0001111000",
+    "0111111100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.9444444444444444,
+   "wall_recall": 0.9245283018867925,
+   "wall_precision": 0.8909090909090909,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 107.0,
+  "run_at": "2026-10-20T18:30:54"
+ },
+ {
+  "id": "maze_006",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 22294,
+   "total_tokens": 23138,
+   "cost": 0.0958045,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0958045,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.0947495
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 21968,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [2, 0],\n  \"goal\": [3, 9],\n  \"right_walls\": [\n    \"000000000\",\n    \"100001010\",\n    \"001000000\",\n    \"010000101\",\n    \"001100001\",\n    \"100101101\",\n    \"100010011\",\n    \"110011001\",\n    \"110010101\",\n    \"100010000\"\n  ],\n  \"down_walls\": [\n    \"0011100000\",\n    \"0101001110\",\n    \"0001011000\",\n    \"0010111100\",\n    \"0110001100\",\n    \"0110111100\",\n    \"0000001000\",\n    \"0011001100\",\n    \"0001001011\"\n  ]\n}\n```",
+  "reasoning": "Describing maze layout by extracting start, goal, right walls, and down walls coordinates from the grid.Extracting right and down wall bits for a 10x10 grid and mapping start and goal coordinates.Identifying thick interior segments to build the right and down wall bitstrings.Extending wall detection to horizontal segments across rows 1 through 5.Extending vertical wall detection to rows 2 and 3 with tentative bit patterns.Extending vertical wall detection to row 4 with tentative bit patterns.Extending vertical wall detection to row 5 and refining the central rectangle boundaries.Extending vertical wall detection to row 4 and updating the right wall bitmask.",
+  "description": {
+   "start": [
+    2,
+    0
+   ],
+   "goal": [
+    3,
+    9
+   ],
+   "right_walls": [
+    "000000000",
+    "100001010",
+    "001000000",
+    "010000101",
+    "001100001",
+    "100101101",
+    "100010011",
+    "110011001",
+    "110010101",
+    "100010000"
+   ],
+   "down_walls": [
+    "0011100000",
+    "0101001110",
+    "0001011000",
+    "0010111100",
+    "0110001100",
+    "0110111100",
+    "0000001000",
+    "0011001100",
+    "0001001011"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.7944444444444444,
+   "wall_recall": 0.6986301369863014,
+   "wall_precision": 0.7727272727272727,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.40555555555555556
+  },
+  "seconds": 70.8,
+  "run_at": "2026-10-20T18:31:58"
+ },
+ {
+  "id": "maze_007",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 22997,
+   "total_tokens": 23841,
+   "cost": 0.09879225,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.09879225,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.09773725
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 22653,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [0, 7],\n  \"goal\": [9, 5],\n  \"right_walls\": [\"100000000\", \"010010001\", \"010101000\", \"000001000\", \"000001010\", \"000001010\", \"010001000\", \"011100010\", \"010001010\", \"000011000\"],\n  \"down_walls\": [\"0000011100\", \"0000100000\", \"1011000000\", \"0111100001\", \"0000000000\", \"0100000100\", \"1011110000\", \"0001100000\", \"0000100000\"]\n}\n```",
+  "reasoning": "Describing maze layout by reporting start and goal coordinates plus right and down wall bitstrings per row.Parsing the grid to infer start and goal coordinates from cell colors.Systematically tracing interior grid lines to derive right and down wall arrays from cell colors.Extending the trace to vertical walls and resolving low-resolution ambiguities.Mapping thick polyline segments to vertical and horizontal wall flags.Refining the horizontal segment endpoint and adjacent vertical wall alignment.Extending wall detection to vertical segments and faint horizontal lines in the middle rows.Extending horizontal line detection to additional segments at y=3 and y=4 while noting a vertical segment at x=6.Extending horizontal line detection to y=5 through y=8 while noting a left-turn at x=8.Extending vertical wall detection across rows 0-9 for columns x=1 to x=6.",
+  "description": {
+   "start": [
+    0,
+    7
+   ],
+   "goal": [
+    9,
+    5
+   ],
+   "right_walls": [
+    "100000000",
+    "010010001",
+    "010101000",
+    "000001000",
+    "000001010",
+    "000001010",
+    "010001000",
+    "011100010",
+    "010001010",
+    "000011000"
+   ],
+   "down_walls": [
+    "0000011100",
+    "0000100000",
+    "1011000000",
+    "0111100001",
+    "0000000000",
+    "0100000100",
+    "1011110000",
+    "0001100000",
+    "0000100000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": false,
+   "edge_accuracy": 0.8555555555555555,
+   "wall_recall": 0.6792452830188679,
+   "wall_precision": 0.8,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 76.8,
+  "run_at": "2026-10-20T18:32:25"
+ },
+ {
+  "id": "maze_008",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 24723,
+   "total_tokens": 25567,
+   "cost": 0.10587805,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.10587805,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.10507275
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 24375,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [6, 9],\n  \"goal\": [0, 1],\n  \"right_walls\": [\n    \"000000000\",\n    \"100010010\",\n    \"000001100\",\n    \"100001100\",\n    \"000101000\",\n    \"010100000\",\n    \"000111100\",\n    \"000100110\",\n    \"000000010\",\n    \"000000000\"\n  ],\n  \"down_walls\": [\n    \"0010101100\",\n    \"0111110100\",\n    \"0000000000\",\n    \"0000000000\",\n    \"1100101100\",\n    \"0010000011\",\n    \"0000110000\",\n    \"0000011000\",\n    \"0000000000\"\n  ]\n}\n```",
+  "reasoning": "Parsing the 10x10 maze image to identify the green start cell at row 6 column 9 and red goal cell at row 0 column 1.Extracting right and down wall bitstrings from the maze image while mapping cell boundaries.Extending wall parsing to additional horizontal segments and updating the bitstring mapping.Extending wall parsing to additional vertical segments and updating the bitstring mapping.Deriving row2 right-wall and down2 bits from the notch geometry.Deriving row3 right-wall bits from vertical segments in the y3-4 band.Extending the row-by-row scan to additional vertical segments and bottom edges.Adding new vertical and horizontal wall segments to the grid map.Extending the wall list with additional vertical and horizontal segments from the image.",
+  "description": {
+   "start": [
+    6,
+    9
+   ],
+   "goal": [
+    0,
+    1
+   ],
+   "right_walls": [
+    "000000000",
+    "100010010",
+    "000001100",
+    "100001100",
+    "000101000",
+    "010100000",
+    "000111100",
+    "000100110",
+    "000000010",
+    "000000000"
+   ],
+   "down_walls": [
+    "0010101100",
+    "0111110100",
+    "0000000000",
+    "0000000000",
+    "1100101100",
+    "0010000011",
+    "0000110000",
+    "0000011000",
+    "0000000000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8166666666666667,
+   "wall_recall": 0.5849056603773585,
+   "wall_precision": 0.7380952380952381,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 84.1,
+  "run_at": "2026-10-20T18:32:25"
+ },
+ {
+  "id": "maze_009",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 61181,
+   "total_tokens": 62025,
+   "cost": 0.26082455,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.26082455,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.26001925
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 60837,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 2],\n  \"goal\": [4, 7],\n  \"right_walls\": [\n    \"000000000\",\n    \"101010101\",\n    \"110101101\",\n    \"110001000\",\n    \"000010000\",\n    \"100011000\",\n    \"110110100\",\n    \"001110100\",\n    \"001000101\",\n    \"001000001\"\n  ],\n  \"down_walls\": [\n    \"0110011000\",\n    \"0011000000\",\n    \"0000110111\",\n    \"0011110110\",\n    \"0011101110\",\n    \"0011001001\",\n    \"1001011110\",\n    \"1000111011\",\n    \"0111110010\"\n  ]\n}\n```",
+  "reasoning": "Interpreting maze image to extract right and down walls with grid coordinates and cell boundaries.Counting columns and rows to map the green cell and boundary coordinates.Extending the wall scan to interior vertical and horizontal segments while excluding the outer border.Mapping the grid coordinates for the start and goal cells.Classifying interior edges as thick or thin while scanning the grid.Extending wall detection to down walls and resolving ambiguous horizontal segments.Resolving row2 vertical wall placements and adjacent cell boundaries.Extending coordinate mapping to validate x=6 vertical wall and adjacent cell connectivity.Refining horizontal wall detection for y=4 and inferring per-cell wall states from shading.Extending wall tracing to continuous polylines and T-junctions on the right side.",
+  "description": {
+   "start": [
+    9,
+    2
+   ],
+   "goal": [
+    4,
+    7
+   ],
+   "right_walls": [
+    "000000000",
+    "101010101",
+    "110101101",
+    "110001000",
+    "000010000",
+    "100011000",
+    "110110100",
+    "001110100",
+    "001000101",
+    "001000001"
+   ],
+   "down_walls": [
+    "0110011000",
+    "0011000000",
+    "0000110111",
+    "0011110110",
+    "0011101110",
+    "0011001001",
+    "1001011110",
+    "1000111011",
+    "0111110010"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8222222222222222,
+   "wall_recall": 0.7777777777777778,
+   "wall_precision": 0.8181818181818182,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.45
+  },
+  "seconds": 213.1,
+  "run_at": "2026-10-20T18:32:40"
+ },
+ {
+  "id": "maze_010",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 18866,
+   "total_tokens": 19710,
+   "cost": 0.0812355,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0812355,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.0801805
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 18530,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [4, 9],\n  \"goal\": [6, 0],\n  \"right_walls\": [\"000000000\", \"100010000\", \"000000100\", \"000001000\", \"011101001\", \"010000001\", \"000000101\", \"000000000\", \"110100010\", \"010010100\"],\n  \"down_walls\": [\"0101001100\", \"0000010000\", \"0010110110\", \"0000000000\", \"0000001100\", \"0001110000\", \"1101110000\", \"0011111100\", \"0000010000\"]\n}\n```",
+  "reasoning": "Analyzing a 10x10 maze image to derive right_walls and down_walls arrays from grid positions.Mapping wall segments to right_walls and down_walls by counting grid rows and columns.Extending the mapping to vertical walls and refining horizontal segments per column.Extending the mapping to row three walls and refining horizontal segments per column.Adding vertical segments at x=2 and x=3 for rows four through six and horizontal segments under row six.Refining wall detection by reevaluating thick vertical segments at x=3, x=4, and x=6 in rows three through five.Extending wall detection to additional columns and rows for the central box.Extending vertical wall checks to lower rows and refining segment boundaries.Extending horizontal wall checks at y=6 and y=7 and validating segment continuity.",
+  "description": {
+   "start": [
+    4,
+    9
+   ],
+   "goal": [
+    6,
+    0
+   ],
+   "right_walls": [
+    "000000000",
+    "100010000",
+    "000000100",
+    "000001000",
+    "011101001",
+    "010000001",
+    "000000101",
+    "000000000",
+    "110100010",
+    "010010100"
+   ],
+   "down_walls": [
+    "0101001100",
+    "0000010000",
+    "0010110110",
+    "0000000000",
+    "0000001100",
+    "0001110000",
+    "1101110000",
+    "0011111100",
+    "0000010000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8666666666666667,
+   "wall_recall": 0.7169811320754716,
+   "wall_precision": 0.8085106382978723,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.29444444444444445
+  },
+  "seconds": 66.0,
+  "run_at": "2026-10-20T18:32:41"
+ },
+ {
+  "id": "maze_011",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 57996,
+   "total_tokens": 58840,
+   "cost": 0.247538,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.247538,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.246483
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 57659,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 3],\n  \"goal\": [6, 4],\n  \"right_walls\": [\"001000100\", \"001010000\", \"101010001\", \"100000011\", \"111100010\", \"111100011\", \"010011000\", \"000000100\", \"101001010\", \"101110000\"],\n  \"down_walls\": [\"1100000000\", \"0000011111\", \"0111111100\", \"0011111000\", \"0000111100\", \"0000000110\", \"1001111111\", \"0110110110\", \"0010011110\"]\n}\n```",
+  "reasoning": "Describing maze layout by extracting start, goal, right walls, and down walls coordinates under output constraints.Translating visual wall segments into right and down wall coordinate lists.Extending wall extraction to infer additional horizontal and vertical segments from the grid image.Refining wall inference by analyzing top-middle vertical segments and U-shaped enclosure boundaries.Extending wall inference to include short top-row vertical segments and row-1 horizontal boundaries.Continuing manual grid tracing to resolve ambiguous wall segments and cell connectivity.Refining horizontal wall inference for the top rows to resolve ambiguous cell boundaries.Revising bottom wall placement at y=2 and tracing outer border gaps to locate start and goal cells.Estimating the red cell\u2019s row and column from grid lines to set the goal coordinate.Extending visual inspection to map remaining wall segments row by row.",
+  "description": {
+   "start": [
+    9,
+    3
+   ],
+   "goal": [
+    6,
+    4
+   ],
+   "right_walls": [
+    "001000100",
+    "001010000",
+    "101010001",
+    "100000011",
+    "111100010",
+    "111100011",
+    "010011000",
+    "000000100",
+    "101001010",
+    "101110000"
+   ],
+   "down_walls": [
+    "1100000000",
+    "0000011111",
+    "0111111100",
+    "0011111000",
+    "0000111100",
+    "0000000110",
+    "1001111111",
+    "0110110110",
+    "0010011110"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": false,
+   "goal_ok": false,
+   "edge_accuracy": 0.7055555555555556,
+   "wall_recall": 0.654320987654321,
+   "wall_precision": 0.6794871794871795,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.45
+  },
+  "seconds": 202.9,
+  "run_at": "2026-10-20T18:33:09"
+ },
+ {
+  "id": "maze_012",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 37912,
+   "total_tokens": 38756,
+   "cost": 0.1619313,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.1619313,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.161126
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 37614,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [3, 0],\n  \"goal\": [7, 8],\n  \"right_walls\": [\"000000100\", \"101000100\", \"111101000\", \"100110010\", \"000110010\", \"001010100\", \"001010100\", \"000010010\", \"100010010\", \"010000000\"],\n  \"down_walls\": [\"0101100000\", \"0000101100\", \"0010111100\", \"0111011000\", \"1101110000\", \"0000011000\", \"1111111000\", \"0011111100\", \"0011001100\"]\n}\n```",
+  "reasoning": "Describing maze layout by reporting start and goal coordinates plus right and down wall bitstrings per row.Mapping wall bits from the grid image to start and goal coordinates.Extending parsing to vertical and horizontal wall segments across the grid.Extending parsing to identify interior thick wall segments while excluding outer borders.Mapping additional interior wall segments from the image while excluding borders.Extending the wall mapping with per-cell deductions while handling ambiguous junctions.Refining junction analysis by testing horizontal span assumptions against pixel-level visualization.Adjusting the goal coordinate to row seven column eight after rechecking wall positions.Extracting wall segments from the grid image to build the maze layout.",
+  "description": {
+   "start": [
+    3,
+    0
+   ],
+   "goal": [
+    7,
+    8
+   ],
+   "right_walls": [
+    "000000100",
+    "101000100",
+    "111101000",
+    "100110010",
+    "000110010",
+    "001010100",
+    "001010100",
+    "000010010",
+    "100010010",
+    "010000000"
+   ],
+   "down_walls": [
+    "0101100000",
+    "0000101100",
+    "0010111100",
+    "0111011000",
+    "1101110000",
+    "0000011000",
+    "1111111000",
+    "0011111100",
+    "0011001100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": false,
+   "edge_accuracy": 0.7277777777777777,
+   "wall_recall": 0.6233766233766234,
+   "wall_precision": 0.7058823529411765,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.42777777777777776
+  },
+  "seconds": 133.6,
+  "run_at": "2026-10-20T18:33:42"
+ },
+ {
+  "id": "maze_013",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 37123,
+   "total_tokens": 37967,
+   "cost": 0.15857805,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.15857805,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.15777275
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 36760,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [7, 9],\n  \"goal\": [0, 2],\n  \"right_walls\": [\n    \"100000000\",\n    \"000010000\",\n    \"011010000\",\n    \"010001010\",\n    \"100100010\",\n    \"100100100\",\n    \"010000100\",\n    \"010001101\",\n    \"000101100\",\n    \"000000100\"\n  ],\n  \"down_walls\": [\n    \"0011100111\",\n    \"0100011111\",\n    \"1001010000\",\n    \"0011101100\",\n    \"0001001000\",\n    \"0100000000\",\n    \"1001110000\",\n    \"0011100000\",\n    \"0100110100\"\n  ]\n}\n```",
+  "reasoning": "Parsing a 10x10 grid image to map coordinates and identify start and goal positions.Reconstructing the 10x10 grid by distinguishing thick black walls from thin gray lines to build right and down wall arrays.Extending the reconstruction with vertical and horizontal wall segments per row and column.Refining the wall map by rechecking ambiguous interior segments and coordinate alignment.Extending wall mapping by marking specific horizontal and vertical segments across rows and columns.Extending wall mapping by identifying additional thick horizontal and vertical segments across rows and columns.Switching to pixel-level coordinate analysis to resolve ambiguous wall boundaries.Extending pixel analysis to map continuous wall segments and infer missing edges.Extending wall mapping to include vertical segments and partial horizontals in the middle rows.Refining the per-cell wall classification by visually sampling grid lines and handling ambiguous segments.",
+  "description": {
+   "start": [
+    7,
+    9
+   ],
+   "goal": [
+    0,
+    2
+   ],
+   "right_walls": [
+    "100000000",
+    "000010000",
+    "011010000",
+    "010001010",
+    "100100010",
+    "100100100",
+    "010000100",
+    "010001101",
+    "000101100",
+    "000000100"
+   ],
+   "down_walls": [
+    "0011100111",
+    "0100011111",
+    "1001010000",
+    "0011101100",
+    "0001001000",
+    "0100000000",
+    "1001110000",
+    "0011100000",
+    "0100110100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": false,
+   "edge_accuracy": 0.7944444444444444,
+   "wall_recall": 0.6615384615384615,
+   "wall_precision": 0.7413793103448276,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 130.6,
+  "run_at": "2026-10-20T18:33:47"
+ },
+ {
+  "id": "maze_014",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 32180,
+   "total_tokens": 33024,
+   "cost": 0.1375703,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.1375703,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.136765
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 31838,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [7, 9],\n  \"goal\": [9, 7],\n  \"right_walls\": [\n    \"000000000\",\n    \"010111110\",\n    \"001000010\",\n    \"110000110\",\n    \"010100110\",\n    \"101010010\",\n    \"001001000\",\n    \"101111001\",\n    \"100101001\",\n    \"001000000\"\n  ],\n  \"down_walls\": [\n    \"0000000001\",\n    \"0011001010\",\n    \"0000011001\",\n    \"0010110010\",\n    \"1011001100\",\n    \"0110001000\",\n    \"0011110010\",\n    \"0010100100\",\n    \"1001111110\"\n  ]\n}\n```",
+  "reasoning": "Interpreting a 10x10 image grid to locate green start and red goal cells by row and column coordinates.Extracting thin gray cell separators and thick black internal walls to build the maze graph.Mapping wall segments to binary strings while resolving the start and goal coordinates.Extending wall parsing to extract additional thick segments and grid coordinates.Refining wall parsing by reevaluating ambiguous vertical and horizontal segments for accuracy.Extending wall parsing to map additional vertical and horizontal segments against the grid.Extending right wall parsing to map additional vertical segments for row three.Extending right wall parsing to include a continuous segment from y=3 to y=5 at x=2.Continuing wall parsing to identify additional vertical segments in row 3.",
+  "description": {
+   "start": [
+    7,
+    9
+   ],
+   "goal": [
+    9,
+    7
+   ],
+   "right_walls": [
+    "000000000",
+    "010111110",
+    "001000010",
+    "110000110",
+    "010100110",
+    "101010010",
+    "001001000",
+    "101111001",
+    "100101001",
+    "001000000"
+   ],
+   "down_walls": [
+    "0000000001",
+    "0011001010",
+    "0000011001",
+    "0010110010",
+    "1011001100",
+    "0110001000",
+    "0011110010",
+    "0010100100",
+    "1001111110"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.85,
+   "wall_recall": 0.8153846153846154,
+   "wall_precision": 0.7794117647058824,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 117.1,
+  "run_at": "2026-10-20T18:33:49"
+ },
+ {
+  "id": "maze_015",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 26607,
+   "total_tokens": 27451,
+   "cost": 0.11388505,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.11388505,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.11307975
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 26287,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [0, 7],\n  \"goal\": [3, 6],\n  \"right_walls\": [\"101000000\", \"000111000\", \"010011000\", \"010011010\", \"000101110\", \"000001100\", \"000001010\", \"010001010\", \"010001000\", \"000001000\"],\n  \"down_walls\": [\"0000101100\", \"0100001000\", \"0000001100\", \"0101000000\", \"0110000110\", \"1110110100\", \"0011000100\", \"0101001100\", \"0010100110\"]\n}\n```",
+  "reasoning": "Indexing the 10x10 maze grid to locate the green start cell by column position.Resolving the green cell's column by counting adjacent white cells to the right.Estimating grid coordinates and mapping thick wall segments to wall arrays.Extending wall mapping to vertical segments and inferring thick boundaries from the image.Refining the wall detection by tracing thick polylines and mapping ambiguous segments.Extending wall inference to black pixels and mapping ambiguous segments.Mapping thick wall segments to down and right wall arrays while resolving ambiguous cell boundaries.Refining wall adjacency inference from slight pixel offsets and thick segment continuity.Extending wall detection to the second row while validating vertical segment thickness.Extending wall detection to the third row while validating horizontal segment placement.",
+  "description": {
+   "start": [
+    0,
+    7
+   ],
+   "goal": [
+    3,
+    6
+   ],
+   "right_walls": [
+    "101000000",
+    "000111000",
+    "010011000",
+    "010011010",
+    "000101110",
+    "000001100",
+    "000001010",
+    "010001010",
+    "010001000",
+    "000001000"
+   ],
+   "down_walls": [
+    "0000101100",
+    "0100001000",
+    "0000001100",
+    "0101000000",
+    "0110000110",
+    "1110110100",
+    "0011000100",
+    "0101001100",
+    "0010100110"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": false,
+   "edge_accuracy": 0.7944444444444444,
+   "wall_recall": 0.6461538461538462,
+   "wall_precision": 0.75,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 90.0,
+  "run_at": "2026-10-20T18:35:47"
+ },
+ {
+  "id": "maze_016",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 27915,
+   "total_tokens": 28759,
+   "cost": 0.11944405,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.11944405,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.11863875
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 27589,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [2, 0],\n  \"goal\": [3, 9],\n  \"right_walls\": [\"001000000\", \"011001001\", \"100001001\", \"000001000\", \"010010101\", \"000011101\", \"101011000\", \"110110000\", \"111110000\", \"001001010\"],\n  \"down_walls\": [\"1001100001\", \"0001110010\", \"0111101110\", \"0011110110\", \"0000000000\", \"0110001111\", \"0001001000\", \"0010000110\", \"0000100110\"]\n}\n```",
+  "reasoning": "Parsing a 10x10 maze grid to extract start and goal coordinates plus right and down wall bitstrings.Confirming start at row 2 column 0 and locating the goal cell row.Identifying thick wall segments along grid boundaries from the image.Extending wall detection to interior horizontal segments and boundary openings.Extending vertical wall detection to column boundaries in the top rows.Following the thick polyline to map interior wall segments and resolve ambiguous row boundaries.Extending the wall mapping to infer missing horizontal and vertical segments for the green cell boundaries.Refining the wall inference by scanning rows for black vertical and horizontal segments.Extending the scan to vertical segments along the right-side stair boundary.Refining the grid scan by rechecking vertical edges and noting uncertainty at x=9.",
+  "description": {
+   "start": [
+    2,
+    0
+   ],
+   "goal": [
+    3,
+    9
+   ],
+   "right_walls": [
+    "001000000",
+    "011001001",
+    "100001001",
+    "000001000",
+    "010010101",
+    "000011101",
+    "101011000",
+    "110110000",
+    "111110000",
+    "001001010"
+   ],
+   "down_walls": [
+    "1001100001",
+    "0001110010",
+    "0111101110",
+    "0011110110",
+    "0000000000",
+    "0110001111",
+    "0001001000",
+    "0010000110",
+    "0000100110"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.7833333333333333,
+   "wall_recall": 0.6790123456790124,
+   "wall_precision": 0.8088235294117647,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.45
+  },
+  "seconds": 98.4,
+  "run_at": "2026-10-20T18:35:56"
+ },
+ {
+  "id": "maze_017",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 36978,
+   "total_tokens": 37822,
+   "cost": 0.1579618,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.1579618,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.1571565
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 36623,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [8, 0],\n  \"goal\": [0, 1],\n  \"right_walls\": [\n    \"100000000\",\n    \"100001000\",\n    \"110001101\",\n    \"101001000\",\n    \"010100100\",\n    \"101011000\",\n    \"000011100\",\n    \"011011100\",\n    \"100001000\",\n    \"010001000\"\n  ],\n  \"down_walls\": [\n    \"0100001111\",\n    \"0100001000\",\n    \"0011111110\",\n    \"0011110100\",\n    \"0000111000\",\n    \"0000101011\",\n    \"1110100000\",\n    \"0111000111\",\n    \"0011101100\"\n  ]\n}\n```",
+  "reasoning": "Describing grid coordinates by numbering rows and columns and locating the green and red cells.Extracting right and down wall positions from the grid image.Developing a systematic method to map vertical and horizontal wall segments from the grid image.Extending the segment mapping to vertical and horizontal grid lines with observed thick walls.Refining column indices for the red dot and mapping thick vertical wall segments in row 1.Extending wall detection to additional vertical and horizontal segments in rows 1 and 2.Estimating grid cell coordinates from pixel positions to resolve column ambiguity.Refining wall detection by mapping thick line segments to grid boundaries.Adjusting horizontal wall bits for Hy1 and Hy2 after reinterpreting the right-side segment.Shifting to vertical wall continuity and grid-edge mapping while ruling out ambiguous spacing.",
+  "description": {
+   "start": [
+    8,
+    0
+   ],
+   "goal": [
+    0,
+    1
+   ],
+   "right_walls": [
+    "100000000",
+    "100001000",
+    "110001101",
+    "101001000",
+    "010100100",
+    "101011000",
+    "000011100",
+    "011011100",
+    "100001000",
+    "010001000"
+   ],
+   "down_walls": [
+    "0100001111",
+    "0100001000",
+    "0011111110",
+    "0011110100",
+    "0000111000",
+    "0000101011",
+    "1110100000",
+    "0111000111",
+    "0011101100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": false,
+   "edge_accuracy": 0.7333333333333333,
+   "wall_recall": 0.6493506493506493,
+   "wall_precision": 0.704225352112676,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.42777777777777776
+  },
+  "seconds": 137.6,
+  "run_at": "2026-10-20T18:35:57"
+ },
+ {
+  "id": "maze_018",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 20856,
+   "total_tokens": 21700,
+   "cost": 0.0894433,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0894433,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.088638
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 20538,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [9, 1],\n  \"goal\": [6, 4],\n  \"right_walls\": [\"000000010\", \"111100010\", \"111110110\", \"000110110\", \"111010110\", \"111000000\", \"111001100\", \"111010110\", \"111110110\", \"011000010\"],\n  \"down_walls\": [\"0101011100\", \"0000011000\", \"0101100000\", \"1011000000\", \"0000111000\", \"0001011100\", \"0000011111\", \"0000111000\", \"0000011000\"]\n}\n```",
+  "reasoning": "Parsing a 10x10 maze grid to extract right and down wall strings from image coordinates.Extending parsing to identify thick black wall segments and ignore outer borders.Enumerating internal vertical and horizontal wall segments while excluding outer borders.Extending vertical wall enumeration to include the x=5 segment.Extending vertical wall enumeration to cover the x=2 and x=3 segments.Enumerating horizontal down-wall segments for y=3 and y=1 rows.Extending vertical wall detection to row1 and adjusting column indexing.Extending horizontal wall detection to row2 and updating the down-wall bitmask.Extending wall parsing to vertical segments and the red goal cell coordinates.Refining vertical and horizontal wall segment coordinates across rows and columns.",
+  "description": {
+   "start": [
+    9,
+    1
+   ],
+   "goal": [
+    6,
+    4
+   ],
+   "right_walls": [
+    "000000010",
+    "111100010",
+    "111110110",
+    "000110110",
+    "111010110",
+    "111000000",
+    "111001100",
+    "111010110",
+    "111110110",
+    "011000010"
+   ],
+   "down_walls": [
+    "0101011100",
+    "0000011000",
+    "0101100000",
+    "1011000000",
+    "0000111000",
+    "0001011100",
+    "0000011111",
+    "0000111000",
+    "0000011000"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.7666666666666667,
+   "wall_recall": 0.7397260273972602,
+   "wall_precision": 0.7012987012987013,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.40555555555555556
+  },
+  "seconds": 69.0,
+  "run_at": "2026-10-20T18:36:13"
+ },
+ {
+  "id": "maze_019",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 31044,
+   "total_tokens": 31888,
+   "cost": 0.132992,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.132992,
+    "upstream_inference_prompt_cost": 0.001055,
+    "upstream_inference_completions_cost": 0.131937
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 30716,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [0, 9],\n  \"goal\": [1, 4],\n  \"right_walls\": [\n    \"010000000\",\n    \"100110000\",\n    \"000100000\",\n    \"010110000\",\n    \"010100000\",\n    \"010100001\",\n    \"100100001\",\n    \"100100001\",\n    \"000110000\",\n    \"001001000\"\n  ],\n  \"down_walls\": [\n    \"0011011100\",\n    \"0111111100\",\n    \"0100111111\",\n    \"1001011100\",\n    \"1110111100\",\n    \"0011111110\",\n    \"0000011100\",\n    \"0110000000\",\n    \"0000001100\"\n  ]\n}\n```",
+  "reasoning": "Parsing the 10x10 maze image to map start and goal positions and to build right and down wall arrays.Extending parsing to identify thick wall segments between adjacent cells.Extending horizontal wall detection to the y=1 segment and red cell boundaries.Extending vertical wall detection to row 1 and y=2 segments with red cell boundaries.Refining vertical wall detection for columns 4-8 and row 2 segments with boundary checks.Extending horizontal wall parsing for row 1 with additional segment checks.Extending parsing to vertical walls and continuous line tracing for row 2.Extending the wall mask for y=2 and y=3 with new segment boundaries.",
+  "description": {
+   "start": [
+    0,
+    9
+   ],
+   "goal": [
+    1,
+    4
+   ],
+   "right_walls": [
+    "010000000",
+    "100110000",
+    "000100000",
+    "010110000",
+    "010100000",
+    "010100001",
+    "100100001",
+    "100100001",
+    "000110000",
+    "001001000"
+   ],
+   "down_walls": [
+    "0011011100",
+    "0111111100",
+    "0100111111",
+    "1001011100",
+    "1110111100",
+    "0011111110",
+    "0000011100",
+    "0110000000",
+    "0000001100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.65,
+   "wall_recall": 0.5308641975308642,
+   "wall_precision": 0.6323529411764706,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.45
+  },
+  "seconds": 100.6,
+  "run_at": "2026-10-20T18:48:44"
+ },
+ {
+  "id": "maze_020",
+  "finish_reason": "stop",
+  "usage": {
+   "prompt_tokens": 844,
+   "completion_tokens": 28891,
+   "total_tokens": 29735,
+   "cost": 0.12359205,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 227,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.12359205,
+    "upstream_inference_prompt_cost": 0.0008053,
+    "upstream_inference_completions_cost": 0.12278675
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 28519,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  },
+  "response": "```json\n{\n  \"start\": [1, 0],\n  \"goal\": [9, 8],\n  \"right_walls\": [\n    \"000000000\",\n    \"001000100\",\n    \"000101101\",\n    \"000110101\",\n    \"010111001\",\n    \"101110001\",\n    \"101110001\",\n    \"011110100\",\n    \"001110100\",\n    \"001000010\"\n  ],\n  \"down_walls\": [\n    \"0010000111\",\n    \"0100110000\",\n    \"0001001000\",\n    \"0100010110\",\n    \"0111001000\",\n    \"0000011100\",\n    \"0100001110\",\n    \"0100000110\",\n    \"0110100100\"\n  ]\n}\n```",
+  "reasoning": "Parsing maze grid coordinates and wall definitions to extract start, goal, right_walls, and down_walls under abstract output constraints.Extracting start and goal positions plus right and down wall lists from the grid image.Parsing thick wall segments to build the right and down wall lists.Extending the scan to additional interior horizontal and vertical segments.Refining the vertical wall at x=9 and checking adjacent segments for connectivity.Extending wall detection to the left side and row 0 vertical segments.Extending wall detection to center staircase segments and column 6-7 boundaries.Extending vertical wall inference to x=7 continuity and x=9 right-side barrier.Extending horizontal wall inference to y=2 and y=5 segments and y=3-4 gaps.Resolving vertical wall assignments for row 2 and row 3 bands and x=4-5 columns.",
+  "description": {
+   "start": [
+    1,
+    0
+   ],
+   "goal": [
+    9,
+    8
+   ],
+   "right_walls": [
+    "000000000",
+    "001000100",
+    "000101101",
+    "000110101",
+    "010111001",
+    "101110001",
+    "101110001",
+    "011110100",
+    "001110100",
+    "001000010"
+   ],
+   "down_walls": [
+    "0010000111",
+    "0100110000",
+    "0001001000",
+    "0100010110",
+    "0111001000",
+    "0000011100",
+    "0100001110",
+    "0100000110",
+    "0110100100"
+   ]
+  },
+  "status": "graded",
+  "note": "",
+  "scores": {
+   "start_ok": true,
+   "goal_ok": true,
+   "edge_accuracy": 0.8444444444444444,
+   "wall_recall": 0.8,
+   "wall_precision": 0.7761194029850746,
+   "exact": false,
+   "missing_edges": 0,
+   "wall_share": 0.3611111111111111
+  },
+  "seconds": 94.2,
+  "run_at": "2026-10-20T18:48:44"
+ }
+]

@@ -1,0 +1,5 @@
+model,answers,answers_crossing_walls,median_walls,mean_walls,std_dev_walls,max_walls,answers_by_walls_crossed
+gemini-4-argon,200,40,2.0,4,4.53,18,1:14 2:9 3:3 4:4 5:2 6:2 7:1 12:1 13:2 18:2
+claude-haiku-5.5,200,57,1,1.82,2.02,11,1:42 2:8 3:1 4:1 6:1 7:2 8:1 11:1
+claude-sonnet-5.5,200,71,1,1.1,0.3,2,1:64 2:7
+gpt-6-luna,200,80,1.0,2.11,2.18,15,1:47 2:16 3:6 4:2 5:3 6:2 7:2 8:1 15:1
