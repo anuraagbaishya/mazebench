@@ -96,7 +96,7 @@ More charts are in [charts/](charts/): start and goal accuracy, wall recall and 
 
 ## Running it
 
-Python 3 with Pillow and matplotlib (`pip install pillow matplotlib`); the scripts that call models use only the standard library. Tested with Python 3.13.
+The dependencies (matplotlib and Pillow) are listed in `pyproject.toml`: `uv sync` installs them, or run `pip install matplotlib pillow`. The scripts that call models use only the standard library. Tested with Python 3.13.
 
 ```sh
 python3 generate.py                      # only needed to regenerate the mazes; the seed makes it reproducible

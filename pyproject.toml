@@ -1,0 +1,10 @@
+[project]
+name = "mazebench"
+version = "0.1.0"
+description = "Can multimodal models read a maze from an image, and can they solve it?"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib",
+    "pillow",
+]
